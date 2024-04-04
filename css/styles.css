@@ -87,28 +87,28 @@ nav img {
 
 
 /*HERO*/
-header{
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 4em;
-    margin-right: 8em;
-}
-
-header img {
-    height: 20em;
-    width: 100%;
-    object-fit: cover;
-}
-
-.header-text{
-    padding-top: 20%;
-    width: 100%;
+header {
+    display: block;
+    padding: var(--site-padding);
 }
 
 .about-me-header {
-    display: block;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 6em;
     background-color: var(--dark-purple);
+    padding: var(--site-padding);
+}
 
+.about-me-header img {
+    height: 30em;
+    width: 24em;
+    object-fit: cover;
+}
+
+.about-text {
+    margin-top: 10em;
+    justify-content: space-evenly;
 }
 
 
@@ -116,16 +116,37 @@ header img {
 /*MAIN*/
 main {
     padding: var(--site-padding);
-    display: flex;
+    text-align: center;
     justify-content: center;
 }
 
-.item {
+#items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--light-purple);
 }
 
+.item-card * {
+    object-fit: cover;
+    width: 30em;
+    height: 16em;
+}
+
+#more {
+    text-align: center;
+}
+
+#more-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: var(--site-padding);
+}
+
+#more-items * {
+    object-fit: cover;
+    width: 20em;
+    height: 12em;
+}
 
 
 /*FOOTER*/
@@ -135,4 +156,81 @@ footer {
     padding: var(--site-padding);
     border-top: 0.1em #2b2b2b solid;
     background-color: var(--light-purple);
+}
+
+
+
+
+/*RESPONSIVE*/
+/* Media query for IPad Pros - less tha 1024*/
+@media screen and (max-width: 64em) {
+    :root {
+        --site-padding: 0.5em 5em 0.5em 5em;
+    }
+
+}
+
+/* Media query for IPad Minis - less tha 768*/
+@media screen and (max-width: 48em) {
+    :root {
+        --site-padding: 0.45em 2.4em 0.45em 2.4em;
+    }
+
+    .nav-menu, .nav-menu-pages {
+        position: fixed;
+        left: -120%;
+        top: 3.4em;
+        flex-direction: column;
+        background-color: #fff;
+        height: 10em;
+        width: 100%;
+        text-align: center;
+        transition:ease-in 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    header {
+        display: flex;
+    }
+
+}
+
+/* Media query for Phones - less tha 480px*/
+@media screen and (max-width: 30em) {
+    /*Links are blue?????? change that maybe*/
+    :root {
+        --site-padding: 0.4em 1em 0.4em 1em;
+    }
+
+    header {
+        display: block;
+    }
+
+    h1 {
+        font-size: 1.875em;
+    }
+    
+    h2 {
+        font-size: 1.625em;
+    }
+    
+    h3 {
+        font-size: 1.25em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    nav {
+        padding: 0.375em;
+    }
 }
