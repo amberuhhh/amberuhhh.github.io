@@ -49,25 +49,21 @@ p {
     font-size: 1em;
 }
 
-/* Link colour when not hovering*/
-button a:link {
+/*button a:link {
     color: rgb(32, 32, 32);
 }
 
-/* Link colour of a visited link*/
 button a:visited {
     color: grey;
 }
 
-/*Link colour when hovering*/
 button a:hover {
-    color: rgb(104, 104, 104);
+    color: rgb(24, 24, 24);
 }
 
-/*Link colour when clicked*/
 button a:active {
     color: darkblue;
-}
+} */
 
 
 /*Navigation*/
@@ -78,11 +74,8 @@ nav {
     display: flex;
     max-height: 3.8em;
     justify-content: space-between;
-    align-items: center;
     padding: var(--site-padding);
     background-color: var(--light-purple);
-    list-style: none;
-    text-decoration: none;
     border-bottom: 0.1em #2b2b2b solid;
 }
 
@@ -100,9 +93,11 @@ nav button {
 }
 
 nav ol a {
+    font-size: 1.25rem;
     margin-left: 1em;
     text-decoration: none;
     color: var(--dark-colour);
+    font-weight: 600;
 }
 
 nav img {
@@ -119,6 +114,7 @@ nav img {
 header {
     display: block;
     padding: var(--site-padding);
+    margin: 2em;
 }
 
 header a {
@@ -164,6 +160,44 @@ main {
 
 #items, #more {
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: auto;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.item-card {
+    border: 0.1em solid var(--dark-colour);
+    height: 20em;
+    max-width: 34em;
+}
+
+.item-card a:hover, .more-card:hover {
+    box-shadow: -0em 0.1em 1em -0.2em var(--dark-colour);
+}
+
+.more-card {
+    border: 0.1em solid var(--dark-colour);
+    height: 12em;
+    width: 20em;
+}
+
+.item-card img, .item-card a, .more-card img, .more-card a {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*BACKUP MAIN
+main {
+    padding: var(--site-padding);
+    text-align: center;
+}
+
+#items, #more {
+    display: flex;
     justify-content: center;
     width: 100%;
     gap: 3em;
@@ -186,7 +220,7 @@ main {
     height: inherit;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 
 
@@ -265,31 +299,31 @@ footer {
     font-size: 3.815rem;
     margin: 0;
     font-weight: 800;
-}
+    }
 
-h2 {
-    font-size: 3.052rem;
-}
+    h2 {
+        font-size: 3.052rem;
+    }
 
-h3 {
-    font-size: 2.441rem;
-}
+    h3 {
+        font-size: 2.441rem;
+    }
 
-h4 {
-    font-size: 1.953rem;
-}
+    h4 {
+        font-size: 1.953rem;
+    }
 
-h5 {
-    font-size: 1.563rem;
-}
+    h5 {
+        font-size: 1.563rem;
+    }
 
-h6 {
-    font-size: 1.25rem;
-}
+    h6 {
+        font-size: 1.25rem;
+    }
 
-p {
-    font-size: 1em;
-}
+    p {
+        font-size: 1em;
+    }
 
     .nav-menu, .nav-menu-pages {
         position: fixed;
@@ -327,7 +361,7 @@ p {
         width: 12em;
     }
 
-    .item-card {
+    /* .item-card {
         height: 12em;
         width: 20em;
     }
@@ -336,7 +370,7 @@ p {
         height: 12em;
         width: auto;
         
-    }
+    } */
 
 }
 
@@ -376,19 +410,8 @@ p {
         margin: 2em;
     }  
 
-    #items, #more {
-        display: grid;
-        gap: 1em;
-    }
-
-    .item-card {
-        height: 12em;
-        width: 17em;
-    }
-
-    .more-card {
-        height: 12em;
-        width: 17em;
+    .item-card, .more-card {
+        width: 100%;
     }
 
 }
