@@ -14,6 +14,11 @@ body {
     --dark-purple: #88466f;
 }
 
+img {
+    max-width: 40em;
+    height: auto;
+}
+
 h1 {
     font-size: 4em;
     margin: 0;
@@ -111,32 +116,92 @@ header {
     justify-content: space-evenly;
 }
 
+#product-header {
+    text-align: center;
+    margin: 8em;
+}
+
 
 
 /*MAIN*/
 main {
     padding: var(--site-padding);
     text-align: center;
+}
+
+#items, #more {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+
+.item-card {
+    border: 0.1em solid var(--dark-colour);
+    height: 18em;
+    width: 30em;
+}
+
+.more-card {
+    border: 0.1em solid var(--dark-colour);
+    height: 12em;
+    width: 20em;
+}
+
+.item-card img, .item-card a, .more-card img, .more-card a {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* main {
+    padding: var(--site-padding);
+    text-align: center;
     justify-content: center;
 }
 
 #items {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr;
+    gap: 2em;
     background-color: var(--light-purple);
+    margin-bottom: 3em;
+}
+
+#more {
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.item-card  {
+    border: 0.1em solid var(--dark-colour);
+    min-width: 35em;
+    height: 20em;
+    object-fit: contain;
+    overflow: hidden;
+    object-position: center;
 }
 
 .item-card * {
     object-fit: cover;
-    width: 30em;
-    height: 16em;
+    min-width: inherit;
+    height: inherit;
 }
 
-#more {
-    text-align: center;
+#more * {
+    height: 8em;
+    min-width: 16em;
+    object-fit: cover;
 }
 
-#more-items {
+
+/* #more-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: var(--site-padding);
@@ -146,7 +211,8 @@ main {
     object-fit: cover;
     width: 20em;
     height: 12em;
-}
+} */
+
 
 
 /*FOOTER*/
@@ -167,6 +233,13 @@ footer {
     :root {
         --site-padding: 0.5em 5em 0.5em 5em;
     }
+
+    #product-header {
+        text-align: center;
+        margin: 6em;
+    }    
+
+
 
 }
 
@@ -197,9 +270,12 @@ footer {
         cursor: pointer;
     }
 
-    header {
-        display: flex;
-    }
+    #product-header {
+        text-align: center;
+        margin: 5em;
+    }    
+
+
 
 }
 
@@ -233,4 +309,11 @@ footer {
     nav {
         padding: 0.375em;
     }
+
+    #product-header {
+        text-align: center;
+        margin: 2em;
+    }    
+
+
 }
