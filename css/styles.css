@@ -20,9 +20,33 @@ img {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.815rem;
     margin: 0;
     font-weight: 800;
+}
+
+h2 {
+    font-size: 3.052rem;
+}
+
+h3 {
+    font-size: 2.441rem;
+}
+
+h4 {
+    font-size: 1.953rem;
+}
+
+h5 {
+    font-size: 1.563rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1em;
 }
 
 /* Link colour when not hovering*/
@@ -97,6 +121,20 @@ header {
     padding: var(--site-padding);
 }
 
+header a {
+    color: white;
+    background-color: var(--dark-purple);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-style: italic;
+}
+
+#product-header {
+    text-align: center;
+    margin: 8em;
+}
+
 .about-me-header {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
@@ -114,11 +152,6 @@ header {
 .about-text {
     margin-top: 10em;
     justify-content: space-evenly;
-}
-
-#product-header {
-    text-align: center;
-    margin: 8em;
 }
 
 
@@ -157,63 +190,6 @@ main {
 
 
 
-/* main {
-    padding: var(--site-padding);
-    text-align: center;
-    justify-content: center;
-}
-
-#items {
-    display: flex;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
-    background-color: var(--light-purple);
-    margin-bottom: 3em;
-}
-
-#more {
-    display: inline-flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    gap: 3em;
-}
-
-.item-card  {
-    border: 0.1em solid var(--dark-colour);
-    min-width: 35em;
-    height: 20em;
-    object-fit: contain;
-    overflow: hidden;
-    object-position: center;
-}
-
-.item-card * {
-    object-fit: cover;
-    min-width: inherit;
-    height: inherit;
-}
-
-#more * {
-    height: 8em;
-    min-width: 16em;
-    object-fit: cover;
-}
-
-
-/* #more-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: var(--site-padding);
-}
-
-#more-items * {
-    object-fit: cover;
-    width: 20em;
-    height: 12em;
-} */
-
-
 
 /*FOOTER*/
 footer {
@@ -234,13 +210,49 @@ footer {
         --site-padding: 0.5em 5em 0.5em 5em;
     }
 
+    h1 {
+        font-size: 3.815rem;
+        margin: 0;
+        font-weight: 800;
+    }
+    
+    h2 {
+        font-size: 3.052rem;
+    }
+    
+    h3 {
+        font-size: 2.441rem;
+    }
+    
+    h4 {
+        font-size: 1.953rem;
+    }
+    
+    h5 {
+        font-size: 1.563rem;
+    }
+    
+    h6 {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
     #product-header {
         text-align: center;
         margin: 6em;
     }    
 
+    .about-me-header img {
+        height: 28em;
+        width: 20em;
+    }
 
-
+    #items, #more {
+        gap: 2em;
+    }
 }
 
 /* Media query for IPad Minis - less tha 768*/
@@ -248,6 +260,36 @@ footer {
     :root {
         --site-padding: 0.45em 2.4em 0.45em 2.4em;
     }
+
+ h1 {
+    font-size: 3.815rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3.052rem;
+}
+
+h3 {
+    font-size: 2.441rem;
+}
+
+h4 {
+    font-size: 1.953rem;
+}
+
+h5 {
+    font-size: 1.563rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1em;
+}
 
     .nav-menu, .nav-menu-pages {
         position: fixed;
@@ -275,7 +317,26 @@ footer {
         margin: 5em;
     }    
 
+    .about-me-header {
+        grid-template-columns: 1.7fr 0.3fr;
+        gap: 4em;
+    }
 
+    .about-me-header img {
+        height: 26em;
+        width: 12em;
+    }
+
+    .item-card {
+        height: 12em;
+        width: 20em;
+    }
+
+    .more-card {
+        height: 12em;
+        width: auto;
+        
+    }
 
 }
 
@@ -313,7 +374,21 @@ footer {
     #product-header {
         text-align: center;
         margin: 2em;
-    }    
+    }  
 
+    #items, #more {
+        display: grid;
+        gap: 1em;
+    }
+
+    .item-card {
+        height: 12em;
+        width: 17em;
+    }
+
+    .more-card {
+        height: 12em;
+        width: 17em;
+    }
 
 }
