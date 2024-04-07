@@ -128,7 +128,7 @@ button a:active {
 
     #product-header {
         text-align: center;
-        margin: 8em;
+        margin: 6em;
     }
 
     .about-me-header {
@@ -153,7 +153,7 @@ button a:active {
 
 
 /*MAIN*/
-    main {
+    main, aside {
         padding: var(--site-padding);
         text-align: center;
     }
@@ -188,6 +188,12 @@ button a:active {
         width: 100%;
         object-fit: cover;
     }
+
+    .products img {
+        max-height: 26em;
+        width: auto;
+    }
+
 
 
 /*BACKUP MAIN*
@@ -359,6 +365,11 @@ button a:active {
         width: 12em;
     }
 
+    .products img {
+        max-height: 14em;
+        width: auto;
+    }
+
     /* .item-card {
         height: 12em;
         width: 20em;
@@ -410,6 +421,11 @@ button a:active {
 
         .item-card, .more-card {
             width: 100%;
+        }
+
+        .products img {
+            max-height: 9em;
+            width: auto;
         }
 
 }
