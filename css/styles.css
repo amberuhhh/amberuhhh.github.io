@@ -12,11 +12,16 @@ body {
     --dark-colour: #2b2b2b;
     --light-purple: #d2bacf;
     --dark-purple: #88466f;
+    --line-height: 1.4em;
 }
 
 img {
     max-width: 40em;
     height: auto;
+}
+
+ol li {
+    line-height: var(--line-height);
 }
 
 h1 {
@@ -47,7 +52,7 @@ h6 {
 
 p {
     font-size: 1em;
-    line-height: 1.35em;
+    line-height: var(--line-height);
 }
 
 /*button a:link {
@@ -158,12 +163,6 @@ button a:active {
         justify-content: space-evenly;
     }
 
-    .about-main div ol a {
-        display: block;
-        list-style: none;
-        text-decoration: none;
-    }
-
 
 
 /*MAIN*/
@@ -209,9 +208,9 @@ button a:active {
     }
 
         /* ABOUT PAGE */
-    aside {
-        display: block;
-    }
+    /* aside {
+
+    } */
 
     .about-main {
         display: grid;
@@ -220,6 +219,9 @@ button a:active {
         text-align: start;
     }
 
+    .about-main * {
+        list-style: square;
+    }
 
 
 /*BACKUP MAIN*
