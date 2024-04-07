@@ -251,7 +251,7 @@ button a:active {
 
         h1 {
             font-size: 3.815rem;
-            margin: 0;
+            margin: 0.5em 0em 0.5em 0em;
             font-weight: 800;
         }
         
@@ -265,6 +265,7 @@ button a:active {
         
         h4 {
             font-size: 1.953rem;
+            margin: 0.5em 0em 1em 0em;
         }
         
         h5 {
@@ -302,8 +303,6 @@ button a:active {
 
     h1 {
         font-size: 3.815rem;
-        margin: 0;
-        font-weight: 800;
         }
 
     h2 {
@@ -399,7 +398,6 @@ button a:active {
 
         h1 {
             font-size: 3.815rem;
-            margin: 0;
             font-weight: 800;
         }
         
