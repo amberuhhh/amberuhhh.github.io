@@ -86,7 +86,8 @@ button a:active {
 
     nav button {
         padding: 10px;
-        margin: 0;
+        font-size: 1rem;
+        margin-left: 1em;
         border: none;
         color: black;
         background-color: transparent;
@@ -336,21 +337,23 @@ button a:active {
         right: -120%; 
         top: 3.1em;
         flex-direction: column; 
-        border-bottom: 0.1em solid var(--dark-colour);
+        border-left: 0.1em solid var(--dark-colour);
         background-color: #fff;
         height: 100%;
         width: 60%;
         text-align: start;
         transition: ease 0.2s;
+        padding: 1em;
     }
 
     .nav-menu * {
-        margin: 0.4em;
+        text-align: start;
+        margin: 0.5em;
+        font-size: 1.8em;
     }
 
     .nav-menu button {
         margin: 0;
-        padding: 0;
     }
 
     .nav-menu.active {
@@ -381,18 +384,6 @@ button a:active {
         max-height: 14em;
         width: auto;
     }
-
-    /* .item-card {
-        height: 12em;
-        width: 20em;
-    }
-
-    .more-card {
-        height: 12em;
-        width: auto;
-        
-    } */
-
 }
 
 /* Media query for Phones - less tha 480px*/
