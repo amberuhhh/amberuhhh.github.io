@@ -47,6 +47,7 @@ h6 {
 
 p {
     font-size: 1em;
+    line-height: 1.35em;
 }
 
 /*button a:link {
@@ -111,11 +112,11 @@ button a:active {
 
 
 
-/*HERO*/
+/*HERO, HEADER*/
     header {
         display: block;
         padding: var(--site-padding);
-        margin: 2em;
+        margin: 7em 0em 7em 0em;
     }
 
     header a {
@@ -127,34 +128,46 @@ button a:active {
         font-style: italic;
     }
 
+
+        /* PRODUCT PAGES */
     #product-header {
         text-align: center;
         margin: 6em;
     }
 
-    .about-me-header {
+
+        /* ABOUT PAGE */
+    .about-header {
         display: grid;
-        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-columns: 1.2fr 0.8fr;
         gap: 6em;
-        background-color: var(--dark-purple);
         padding: var(--site-padding);
+        border-bottom: 1em solid var(--dark-colour);
+        padding-bottom: 1.4em;
     }
 
-    .about-me-header img {
-        height: 30em;
-        width: 24em;
+    .about-header img {
+        height: 100%;
+        width: 100%;
         object-fit: cover;
+        border-radius: 10% 25%;
     }
 
     .about-text {
-        margin-top: 10em;
+        margin-top: 20%;
         justify-content: space-evenly;
+    }
+
+    .about-main div ol a {
+        display: block;
+        list-style: none;
+        text-decoration: none;
     }
 
 
 
 /*MAIN*/
-    main, aside {
+    main, menu {
         padding: var(--site-padding);
         text-align: center;
     }
@@ -193,6 +206,18 @@ button a:active {
     .products img {
         max-height: 26em;
         width: auto;
+    }
+
+        /* ABOUT PAGE */
+    aside {
+        display: block;
+    }
+
+    .about-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8em;
+        text-align: start;
     }
 
 
@@ -246,7 +271,7 @@ button a:active {
 /* Media query for IPad Pros - less tha 1024*/
     @media screen and (max-width: 64em) {
         :root {
-            --site-padding: 0.5em 5em 0.5em 5em;
+            --site-padding: 0.4em 4em 0.4em 4em;
         }
 
         h1 {
@@ -283,16 +308,28 @@ button a:active {
         #product-header {
             text-align: center;
             margin: 6em;
-        }    
-
-        .about-me-header img {
-            height: 28em;
-            width: 20em;
         }
+
+        .about-header  {
+            gap: 6em;
+        }
+
+        .about-text {
+            margin-top: 8%;
+        }    
 
         #items, #more {
             gap: 2em;
         }
+
+        .about-main {
+            display: block;
+        }
+
+        .about-main div {
+            margin-bottom: 5em;
+        }
+    
 }
 
 /* Media query for IPad Minis - less tha 768*/
@@ -300,34 +337,6 @@ button a:active {
         :root {
             --site-padding: 0.45em 2.4em 0.45em 2.4em;
         }
-
-    h1 {
-        font-size: 3.815rem;
-        }
-
-    h2 {
-        font-size: 3.052rem;
-    }
-
-    h3 {
-        font-size: 2.441rem;
-    }
-
-    h4 {
-        font-size: 1.953rem;
-    }
-
-    h5 {
-        font-size: 1.563rem;
-    }
-
-    h6 {
-        font-size: 1.25rem;
-    }
-
-    p {
-        font-size: 1em;
-    }
 
     .nav-menu{
         display: flex;
@@ -369,14 +378,17 @@ button a:active {
         margin: 5em;
     }    
 
-    .about-me-header {
-        grid-template-columns: 1.7fr 0.3fr;
+    .about-header {
+        display: block;
         gap: 4em;
     }
 
-    .about-me-header img {
-        height: 26em;
-        width: 12em;
+    .about-header img {
+        height: 20em;
+    }
+
+    .about-text {
+        margin-top: 0;
     }
 
     .products img {
@@ -394,31 +406,6 @@ button a:active {
 
         header {
             display: block;
-        }
-
-        h1 {
-            font-size: 3.815rem;
-            font-weight: 800;
-        }
-        
-        h2 {
-            font-size: 3.052rem;
-        }
-        
-        h3 {
-            font-size: 2.441rem;
-        }
-        
-        h4 {
-            font-size: 1.953rem;
-        }
-        
-        h5 {
-            font-size: 1.563rem;
-        }
-        
-        h6 {
-            font-size: 1.25rem;
         }
         
         p {
