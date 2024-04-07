@@ -329,24 +329,36 @@ button a:active {
         font-size: 1em;
     }
 
-    .nav-menu, .nav-menu-pages {
+    .nav-menu{
+        display: flex;
+        z-index: 800;
         position: fixed;
-        left: -120%;
-        top: 3.4em;
-        flex-direction: column;
+        right: -120%; 
+        top: 3.1em;
+        flex-direction: column; 
+        border-bottom: 0.1em solid var(--dark-colour);
         background-color: #fff;
-        height: 10em;
-        width: 100%;
-        text-align: center;
-        transition:ease-in 0.3s;
+        height: 100%;
+        width: 60%;
+        text-align: start;
+        transition: ease 0.2s;
+    }
+
+    .nav-menu * {
+        margin: 0.4em;
+    }
+
+    .nav-menu button {
+        margin: 0;
+        padding: 0;
     }
 
     .nav-menu.active {
-        left: 0;
+        right: 0;
     }
 
     .hamburger {
-        display: block;
+        display: block; 
         cursor: pointer;
     }
 
