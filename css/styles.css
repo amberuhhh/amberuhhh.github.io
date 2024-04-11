@@ -50,12 +50,12 @@ h6 {
     font-size: 1.25rem;
 }
 
-p {
+p, main div a {
     font-size: 1em;
     line-height: var(--line-height);
 }
 
-/*button a:link {
+button a:link {
     color: rgb(32, 32, 32);
 }
 
@@ -69,7 +69,7 @@ button a:hover {
 
 button a:active {
     color: darkblue;
-} */
+}
 
 
 /*Navigation*/
