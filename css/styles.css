@@ -66,9 +66,7 @@ button {
     background-color: var(--dark-purple);
     padding: 0.5em;
     border: none;
-    /* border-radius: 0.5em; */
     text-decoration: none;
-    /* font-style: italic; */
     min-width: 8em;
 }
 
@@ -80,6 +78,25 @@ button {
     border-radius: 0em 0em 1.5em 0em;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: rgb(73, 73, 73);
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: var(--dark-purple);
+}
 
 button:link,  button a:link{
     color: white;
