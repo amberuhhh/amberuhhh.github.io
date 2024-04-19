@@ -211,9 +211,7 @@ button:active, button a:active {
     .items {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-        /* flex-flow: wrap; */
         justify-content: space-between;
-        /* width: auto; */
         gap: 2em;
         margin: 0em 0em 6em 0em;
     }
@@ -230,7 +228,7 @@ button:active, button a:active {
     .item-card {
         /* border: 0.05em solid var(--dark-colour); */
         height: 13em;
-        width: auto;
+        width: 100%;
     }
 
     .item-card a:hover, .more-card:hover {
@@ -238,7 +236,7 @@ button:active, button a:active {
     }
 
     .more-card {
-        border: 0.1em solid var(--dark-colour);
+        /* border: 0.1em solid var(--dark-colour); */
         height: 12em;
         width: 20em;
     }
@@ -255,10 +253,6 @@ button:active, button a:active {
     }
 
         /* ABOUT PAGE */
-    /* aside {
-
-    } */
-
     .about-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -360,9 +354,8 @@ button:active, button a:active {
         }
 
         .items {
-            display: flex;
-            flex-flow: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         #product-header {
@@ -398,6 +391,10 @@ button:active, button a:active {
             --site-padding: 0.45em 2.4em 0.45em 2.4em;
         }
 
+        .large-text {
+            font-size: 6.2em;
+        }
+
     .nav-menu{
         display: flex;
         z-index: 800;
@@ -429,6 +426,7 @@ button:active, button a:active {
     }
 
     .hamburger {
+        min-width: fit-content;
         display: block; 
         cursor: pointer;
     }
@@ -467,6 +465,10 @@ button:active, button a:active {
         header {
             display: block;
         }
+
+        .large-text {
+            font-size: 5.8em;
+        }
         
         p {
             font-size: 1em;
@@ -480,10 +482,14 @@ button:active, button a:active {
             display: flex;;
         }
 
-
         #hero {
-            display: flex;
+            display: block;
             margin-top: 3em;
+        }
+
+        .items {
+            grid-template-columns: 1fr;
+            gap: 5em;
         }
 
 
@@ -494,6 +500,7 @@ button:active, button a:active {
 
         .item-card, .more-card {
             width: 100%;
+            /* border-top: 0.05em solid var(--dark-colour); */
         }
 
         .products img {
