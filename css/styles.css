@@ -229,6 +229,7 @@ button a:active {
         grid-template-columns: 1fr 1fr;
         gap: 8em;
         text-align: start;
+        margin-bottom: 4em;
     }
 
     .about-main * {
@@ -275,8 +276,8 @@ button a:active {
         height: 3em;
         text-align: center;
         padding: var(--site-padding);
-        border-top: 0.1em #2b2b2b solid;
-        background-color: var(--light-purple);
+        border-top: 0.05em #2b2b2b solid;
+        background-color: white;
     }
 
 
