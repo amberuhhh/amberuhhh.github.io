@@ -8,7 +8,7 @@ body {
 }
 
 :root {
-    --site-padding: 0.5em 10em 0.5em 10em;
+    --site-padding: 0.5em 11em 0.5em 11em;
     --dark-colour: #2b2b2b;
     --light-purple: #d2bacf;
     --dark-purple: #88466f;
@@ -176,12 +176,12 @@ button:active, button a:active {
 /*HERO, HEADER*/
     header {
         padding: var(--site-padding);
-        margin: 7em 0em 7em 0em;
+        margin: 5em 0em 5em 0em;
     }
 
     #hero {
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.4fr 0.6fr;
         margin-top: 10em;
     }
 
@@ -432,7 +432,7 @@ button:active, button a:active {
         z-index: 800;
         position: fixed;
         right: -120%; 
-        top: 3.1em;
+        top: 6.6em;
         flex-direction: column; 
         border-left: 0.1em solid var(--dark-colour);
         background-color: #fff;
@@ -461,6 +461,10 @@ button:active, button a:active {
         min-width: fit-content;
         display: block; 
         cursor: pointer;
+    }
+
+    #top-notif h5 {
+        font-size: 1.4em;
     }
 
     #product-header {
@@ -506,8 +510,16 @@ button:active, button a:active {
             font-size: 1em;
         }
 
-        nav {
-            padding: 0.375em;
+        .nav-menu {
+            top: 5.7em;
+        }
+
+        #top-notif {
+            height: 1.3em;
+        }
+
+        #top-notif h5 {
+            font-size: 1em;
         }
 
         #hero {
@@ -521,7 +533,7 @@ button:active, button a:active {
 
         .items {
             grid-template-columns: 1fr;
-            gap: 3em;
+            gap: 2em;
         }
 
 
