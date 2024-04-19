@@ -53,9 +53,10 @@ h5 {
 
 h6 {
     font-size: 1.25rem;
+    margin: 0.4em;
 }
 
-p, main div a {
+p {
     font-size: 1em;
     line-height: var(--line-height);
 }
@@ -68,22 +69,31 @@ button {
     /* border-radius: 0.5em; */
     text-decoration: none;
     /* font-style: italic; */
+    min-width: 8em;
+}
+
+.back-button, #back-button {
+    top: 5.8em;
+    position: sticky;
+    min-width: fit-content;
+    padding: 1.2em;
+    border-radius: 0em 0em 1.5em 0em;
 }
 
 
-button a:link {
+button:link,  button a:link{
     color: white;
 }
 
-button a:visited {
+button:visited, button a:visited {
     color: whitesmoke;
 }
 
-button a:hover {
+button:hover, button a:hover {
     color: lightgrey;
 }
 
-button a:active {
+button:active, button a:active {
     color: rgb(166, 166, 166);
 }
 
@@ -95,14 +105,14 @@ button a:active {
         position: sticky;
         z-index: 999;
         display: flex;
-        max-height: 3.8em;
+        height: 3.8em;
         justify-content: space-between;
         align-items: center;
         padding: var(--site-padding);
         background-color: white;
 
         /* background-color: var(--light-purple); */
-        border-bottom: 0.05em #2b2b2b solid;
+        border-bottom: 0.05em var(--dark-colour) solid;
     }
 
     .nav-menu {
@@ -146,7 +156,7 @@ button a:active {
     #hero {
         display: grid;
         grid-template-columns: 1.2fr 0.8fr;
-        margin-top: 14em;
+        margin-top: 12em;
     }
 
     #hero h1 {
@@ -158,6 +168,13 @@ button a:active {
     #product-header {
         text-align: center;
         margin: 6em;
+    }
+
+    #product-header ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
     }
 
 
@@ -198,9 +215,9 @@ button a:active {
         justify-content: space-between;
         /* width: auto; */
         gap: 2em;
-        margin-bottom: 3em;
+        margin: 0em 0em 6em 0em;
     }
-    
+
     #more {
         display: flex;
         flex-flow: wrap;
@@ -338,6 +355,16 @@ button a:active {
             font-size: 1em;
         }
 
+        #hero {
+            grid-template-columns: 1.6fr 0.4fr;
+        }
+
+        .items {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+        }
+
         #product-header {
             text-align: center;
             margin: 6em;
@@ -448,6 +475,17 @@ button a:active {
         nav {
             padding: 0.375em;
         }
+
+        #hero {
+            display: flex;;
+        }
+
+
+        #hero {
+            display: flex;
+            margin-top: 3em;
+        }
+
 
         #product-header {
             text-align: center;
