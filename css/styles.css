@@ -146,10 +146,14 @@ button:active, button a:active {
         text-decoration: none;
     }
 
+    .nav-menu a {
+        color: black;
+    }
+
     nav button {
         padding: 10px;
         font-size: 1rem;
-        margin-left: 1em;
+        margin: -1em;
         border: none;
         color: black;
         background-color: transparent;
@@ -159,7 +163,6 @@ button:active, button a:active {
         font-size: 1.25rem;
         margin-left: 1em;
         text-decoration: none;
-        color: var(--dark-colour);
         font-weight: 600;
     }
 
@@ -181,8 +184,9 @@ button:active, button a:active {
 
     #hero {
         display: grid;
-        grid-template-columns: 1.4fr 0.6fr;
+        /* grid-template-columns: 1.4fr 0.6fr; */
         margin-top: 10em;
+        text-align: center;
     }
 
     #hero h1 {
@@ -274,9 +278,10 @@ button:active, button a:active {
         width: 100%;
         object-fit: cover;
     }
-/* 
-    .products {
-        margin: 0;
+
+    /* .products * {
+        display: grid;
+        grid-template-columns: 1fr;
     } */
 
     .products img {
