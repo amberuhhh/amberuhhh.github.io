@@ -211,7 +211,7 @@ button:active, button a:active {
 
         /* PRODUCT PAGES */
     #product-header {
-        text-align: center;
+        text-align: left;
         margin: 3em 0em 2em 0em;
     }
 
@@ -388,10 +388,6 @@ button:active, button a:active {
 
         .about-main div {
             margin-bottom: 5em;
-        }
-
-        #more {
-
         }
     
 }
