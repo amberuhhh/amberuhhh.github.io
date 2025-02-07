@@ -64,6 +64,10 @@ p {
     line-height: var(--line-height);
 }
 
+.italics {
+    font-style: italic;
+}
+
 button {
     color: white;
     background-color: var(--dark-purple);
