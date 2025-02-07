@@ -185,14 +185,13 @@ button:active, button a:active {
 /*HERO, HEADER*/
     header {
         padding: var(--site-padding);
-        margin: 5em 0em 5em 0em;
     }
 
     #hero {
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.3fr 0.7fr;
         gap: 2em;
-        margin: 3em 0em 5em 0em;
+        /* margin: 3em 0em 3em 0em; */
         text-align: left;
     }
 
@@ -332,6 +331,11 @@ button:active, button a:active {
 /*RESPONSIVE*/
 /* Media query for IPad Pros - less tha 1024*/
     @media screen and (max-width: 64em) {
+        :root {
+            --site-padding: 1% 12% 1% 12%;
+        }
+
+
         h1 {
             font-size: 3.815rem;
             margin: 0.5em 0em 0.5em 0em;
@@ -369,7 +373,6 @@ button:active, button a:active {
         }
 
         #product-header {
-            text-align: center;
             margin: 6em;
         }
 
@@ -399,7 +402,7 @@ button:active, button a:active {
 /* Media query for IPad Minis - less tha 768*/
     @media screen and (max-width: 48em) {
     :root {
-        --site-padding: 1% 10% 1% 10%;
+        --site-padding: 1% 8% 1% 8%;
     }
     
     .large-text {
@@ -451,7 +454,6 @@ button:active, button a:active {
     }
 
     #product-header {
-        text-align: center;
         margin: 5em;
     }    
 
@@ -481,6 +483,10 @@ button:active, button a:active {
 /* Media query for Phones - less tha 480px*/
     @media screen and (max-width: 30em) {
         /*Links are blue?????? change that maybe*/
+        :root {
+            --site-padding: 1% 5% 1% 5%;
+        }
+
         header {
             display: block;
         }
