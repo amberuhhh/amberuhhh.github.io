@@ -1,6 +1,7 @@
 /*Base*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* Raleway
+Bodoni Moda (Didot replacement) */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     padding: 0;
     margin: 0;
@@ -17,6 +18,26 @@ body {
     --line-height: 1.4em;
 }
 
+/* .canvas {
+    width: 100%;
+    height: 100%;
+} */
+
+.star {
+    width: 300px;  
+    aspect-ratio: 1;
+    background: #d2bacf;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    /* or more simple
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+     */
+  }
+  
 img {
     max-width: 40em;
     height: auto;
@@ -30,6 +51,7 @@ h1 {
     font-size: 3.815rem;
     margin: 0;
     font-weight: 800;
+    font-family: "Bodoni Moda", serif;
 }
 
 .large-text {
@@ -39,10 +61,12 @@ h1 {
 
 h2 {
     font-size: 3.052rem;
+    font-family: "Bodoni Moda", serif;
 }
 
 h3 {
     font-size: 2.441rem;
+    font-family: "Bodoni Moda", serif;
 }
 
 h4 {
@@ -189,7 +213,7 @@ button:active, button a:active {
 
     #hero {
         display: grid;
-        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-columns: 1fr;
         gap: 2em;
         /* margin: 3em 0em 3em 0em; */
         text-align: left;
@@ -276,23 +300,25 @@ button:active, button a:active {
     .item-card {
         /* border: 0.05em solid var(--dark-colour); */
         height: 13em, 100%;
-        /* width: 100%; */
-        margin-bottom: 2.4em;
-    }
-
-    .item-card img:hover, .more-card img:hover {
-        /* box-shadow: -0em 0.1em 1em -0.2em var(--dark-colour); */
+        width: 100%;
+        margin-bottom: 2em;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
 
     .more-card {
-        /* border: 0.1em solid var(--dark-colour); */
         height: 12em;
         width: 20em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 20px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+    .item-card img:hover, .more-card img:hover {
+        box-shadow: -0em 0.1em 1em -0.2em var(--dark-colour);
+        height: 99%;
+        width: 99%;
     }
 
     .item-card img, .item-card a, .more-card img, .more-card a {
-        height: inherit;
+        height: 100%;
         width: 100%;
         object-fit: cover;
     }
