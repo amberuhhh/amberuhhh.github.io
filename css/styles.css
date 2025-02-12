@@ -18,12 +18,15 @@ body {
     --line-height: 1.4em;
 }
 
-/* .canvas {
+/* .star-parent {
     width: 100%;
-    height: 100%;
-} */
+    padding: 0;
+    margin:0;
+    justify-items: right;
+}
 
 .star {
+    right: 0;
     width: 300px;  
     aspect-ratio: 1;
     background: #d2bacf;
@@ -32,11 +35,8 @@ body {
       calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
       calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
       calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-     ); 
-    /* or more simple
-    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
-     */
-  }
+     );
+  } */
   
 img {
     max-width: 36em;
@@ -55,7 +55,8 @@ h1 {
 }
 
 .large-text {
-    font-size: 6.6em;
+    font-size: 6.8em;
+    margin: 0;
 }
 
 h2 {
@@ -164,6 +165,7 @@ button:active, button a:active {
     }
 
     .nav-menu {
+        z-index: 990;
         list-style: none;
         text-decoration: none;
     }
@@ -172,6 +174,14 @@ button:active, button a:active {
         color: black;
     }
 
+    .nav-menu i {
+        margin: 0.5em 0em 0.5em 0em;
+    }
+
+    .nav-logo {
+        height: 2em;
+    }
+    
     nav button {
         padding: 10px;
         font-size: 1rem;
@@ -207,13 +217,13 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
-        /* margin: 1em 0em 3em 0em; */
+        margin-bottom: 3.4em;
         text-align: left;
     }
 
-    /* .hero-card {
-        
-    } */
+    .hero-card p {
+        width: 60%;
+    }
 
     #hero h1 {
         margin-bottom: 0.35em;
@@ -228,29 +238,6 @@ button:active, button a:active {
 
 
 
-        /* PRODUCT PAGES */
-    #product-header {
-        margin: 2em 0em 3em 0em;
-        text-align: left;
-    }
-
-    #product-header ol {
-        list-style: none;
-        padding: 0;
-        justify-content: center;
-    }
-
-    .product-header-split {
-        display: grid;
-        grid-template-columns: 1.3fr 0.7fr;
-        gap: 5em;
-    }
-
-    .product-header-split-more {
-        margin-bottom: 3em;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 
 
         /* ABOUT PAGE */
@@ -280,14 +267,13 @@ button:active, button a:active {
 /*MAIN*/
     main, menu {
         padding: var(--site-padding);
-        text-align: center;
     }
 
     .items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
-        gap: 2em;
+        gap: 5%;
         margin: 0em 0em 6em 0em;
     }
 
@@ -299,6 +285,50 @@ button:active, button a:active {
         gap: 2em;
         margin-bottom: 3em;
     }
+
+    .products {
+        display: flex;
+        white-space: nowrap;
+        overflow: auto;
+        gap: 1.4em;
+        margin-bottom: 2em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+    .products img {
+        max-height: 30em;
+        max-width: auto;
+       object-fit: contain;
+    }
+
+    #product-header {
+        margin: 2em 0em 3em 0em;
+        text-align: left;
+    }
+
+    #product-header ol {
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .product-header-split {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 5em;
+    }
+
+    .product-header-split-more {
+        margin-bottom: 3em;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+
 
     .item-card {
         /* border: 0.05em solid var(--dark-colour); */
@@ -326,10 +356,8 @@ button:active, button a:active {
         object-fit: cover;
     }
 
-    .products img {
-        max-height: 26em;
-        width: auto;
-    }
+
+
 
         /* ABOUT PAGE */
     .about-main {
@@ -429,6 +457,7 @@ button:active, button a:active {
 }
 
 /* Media query for IPad Minis - less tha 768*/
+/* THIS IS WHERE THE NAV CHANGES TO HAMBURGER */
     @media screen and (max-width: 48em) {
     :root {
         --site-padding: 1% 8% 1% 8%;
@@ -440,16 +469,14 @@ button:active, button a:active {
 
     .nav-menu{
         display: flex;
-        z-index: 800;
         position: fixed;
         right: -120%; 
-        top: 6.6em;
+        top: 2.2em;
         flex-direction: column; 
         border-left: 0.1em solid var(--dark-colour);
         background-color: #fff;
         height: 100%;
-        width: 60%;
-        text-align: start;
+        width: 40%;
         transition: ease 0.2s;
         padding: 1em;
     }
@@ -460,6 +487,16 @@ button:active, button a:active {
         font-size: 1.8em;
     }
 
+    .nav-logo {
+        height: 1.9em;
+    }
+
+    .hamburger {
+        /* min-width: fit-content; */
+        display: block; 
+        top: 2em;
+    }
+
     .nav-menu button {
         margin: 0;
     }
@@ -468,18 +505,16 @@ button:active, button a:active {
         right: 0;
     }
 
-    .hamburger {
-        min-width: fit-content;
-        display: block; 
-        cursor: pointer;
-    }
-
     #top-notif h5 {
         font-size: 1.4em;
     }
 
     #hero {
         display: block;
+    }
+
+    .hero-card p {
+        width: auto;
     }
 
     #product-header {
@@ -529,7 +564,7 @@ button:active, button a:active {
         }
 
         .nav-menu {
-            top: 5.7em;
+            width: 60%;
         }
 
         #top-notif {
