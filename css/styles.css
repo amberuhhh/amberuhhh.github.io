@@ -446,26 +446,26 @@ button:active, button a:active {
         }
 
         h1 {
-            font-size: 3.815rem;
+            font-size: 3.8rem;
             margin: 0.5em 0em 0.5em 0em;
             font-weight: 800;
         }
         
         h2 {
-            font-size: 3.052rem;
+            font-size: 3rem;
         }
         
         h3 {
-            font-size: 2.441rem;
+            font-size: 2.3rem;
         }
         
         h4 {
-            font-size: 1.953rem;
+            font-size: 1.9rem;
             margin: 0.5em 0em 1em 0em;
         }
         
         h5 {
-            font-size: 1.563rem;
+            font-size: 1.5rem;
         }
         
         h6 {
@@ -610,16 +610,16 @@ button:active, button a:active {
     #contact, #contact-about {
         grid-template-columns: 1fr;
         gap: 2em;
-        padding: 4% 8% 10% 8%;
+        padding: 4% 8% 5% 8%;
     }
 
-    #contact h2, #contact-about h2 {
+    #contact-about h2 {
         border-top: 0.1em black solid;
         padding-top: 0.7em;
     }
 
     #contact .center-image img {
-        max-height: 24em;
+        max-height: 20em;
         max-width: 100%;
         border-radius: 2em;
         object-fit: cover;
