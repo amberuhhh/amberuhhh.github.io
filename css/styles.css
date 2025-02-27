@@ -250,11 +250,11 @@ button:active, button a:active {
         /* ABOUT PAGE */
     .about-header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.9fr 1.1fr;
         gap: 4em;
         padding: var(--site-padding);
         /* border-bottom: 0.6em solid var(--dark-colour); */
-        padding-bottom: 3.2em;
+        padding-bottom: 3em;
     }
 
     .about-header img {
@@ -359,11 +359,10 @@ button:active, button a:active {
 
     #contact {
         grid-template-columns: 1.2fr 0.8fr;
-
     }
 
     #contact-about {
-        padding: 5% 15% 8% 15%;
+        padding: 4% 15% 6% 15%;
     }
 
     #contact h2, #contact-about h2 {
@@ -490,8 +489,10 @@ button:active, button a:active {
             gap: 1em;
         }    
 
-        .about-header  {
+        .about-header {
+            grid-template-columns: 1fr 1fr;
             gap: 4em;
+            /* padding-bottom: 3em; */
         }
 
         .about-text {
