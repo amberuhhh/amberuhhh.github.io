@@ -308,24 +308,33 @@ button:active, button a:active {
         margin-bottom: 3em;
     }
 
+
+
     .products { 
+        padding: var(--site-padding);
         display: flex; 
         white-space: nowrap; 
         overflow: auto; 
-        gap: 5em; 
+        gap: 2em; 
         margin-bottom: 2em; 
-        height: 32em;
+        max-height: 30em;
         box-shadow: rgba(0, 0, 0, 0.1) 50px 0px 40px 0px; 
     }
 
     .products img {
+        /* max-height: 28em; */
         max-height: 100%;
-        max-width: 100%;
-       object-fit: contain;
+        width: 40em;
+        /* max-width: 100%; */
+        /* object-fit: cover; */
+        object-fit: contain;
+        /* overflow: visible;  */
     }
 
+
+
     #product-header {
-        margin: 2em 0em 3em 0em;
+        margin: 2% 0% 3% 0%;
         text-align: left;
     }
 
@@ -348,7 +357,7 @@ button:active, button a:active {
     }
 
     #contact, #contact-about {
-        background-color: var(--light-purple);
+        background-color: var(--light-colour);
         padding: 4% 15% 4% 15%;
         margin: 3em 0em 0em 0em;
         display: grid;
@@ -363,6 +372,7 @@ button:active, button a:active {
 
     #contact-about {
         padding: 4% 15% 6% 15%;
+        border-top: 0.08em #2b2b2b solid;
     }
 
     #contact h2, #contact-about h2 {
@@ -480,10 +490,6 @@ button:active, button a:active {
             grid-template-columns: 1fr 1fr;
         }
 
-        #product-header {
-            margin: 6em;
-        }
-
         .product-header-split {
             grid-template-columns: 1fr;
             gap: 1em;
@@ -500,8 +506,13 @@ button:active, button a:active {
         }    
 
         #items, #more {
-            gap: 2em;
+            gap: 1em;
             grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+        }
+
+        .more-card {
+            height: 10em;
+            width: 80%;
         }
 
         .about-main {
@@ -523,6 +534,12 @@ button:active, button a:active {
     
     .large-text {
         font-size: 6em;
+    }
+
+    h1 {
+        font-size: 3.6rem;
+        margin: 0.5em 0em 0.5em 0em;
+        font-weight: 800;
     }
 
     #top-nav {
@@ -597,11 +614,27 @@ button:active, button a:active {
     }
 
     #product-header {
-        margin: 5em;
+        margin: 1% 0% 2% 0%;
     } 
+
+    /* .products { 
+        gap: 2em; 
+        height: 20em;
+    }
+
+    .products img {
+        height: 20em;
+        object-fit: cover;
+        max-width: 100%;
+    } */
 
     #more {
         flex-flow: wrap;
+    }
+
+    .more-card {
+        height: 16em;
+        width: 80%;
     }
 
     .items {
@@ -687,8 +720,7 @@ button:active, button a:active {
         }
 
         #product-header {
-            text-align: center;
-            margin: 2em;
+            margin: 1em;
         }  
 
         .item-card, .more-card {
