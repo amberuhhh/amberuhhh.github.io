@@ -220,9 +220,18 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
-        margin-bottom: 3.4em;
+        margin-bottom: 3em;
         text-align: left;
     }
+/* 
+    .hero-star {
+        background: no-repeat;
+        background-image: url("/images/just-star.png");
+        background-position: right bottom;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    } */
 
     .hero-card p {
         width: 60%;
