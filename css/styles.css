@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-    --site-padding: 1% 15% 1% 15%;
+    --site-padding: 1% 16% 1% 16%;
     --dark-colour: #2b2b2b;
     --light-colour: #FFFDFA;
     --light-purple: #d2bacf;
@@ -223,12 +223,11 @@ button:active, button a:active {
         margin-bottom: 3em;
         text-align: left;
     }
-/* 
-    .hero-star {
+
+    /* .hero-star {
         background: no-repeat;
-        background-image: url("/images/just-star.png");
+        background-image: url("/images/portfolio-hero-star.png");
         background-position: right bottom;
-        background-size: cover;
         height: 100%;
         width: 100%;
     } */
@@ -326,7 +325,7 @@ button:active, button a:active {
         overflow: auto; 
         gap: 2em; 
         margin-bottom: 2em; 
-        max-height: 30em;
+        max-height: 25em;
         box-shadow: rgba(0, 0, 0, 0.1) 50px 0px 40px 0px; 
     }
 
