@@ -336,20 +336,16 @@ button:active, button a:active {
         padding: var(--site-padding);
         display: flex; 
         white-space: nowrap; 
-        overflow: auto; 
-        gap: 2em; 
-        max-height: 25em;
+        overflow-x: scroll;
+        gap: 1em; 
+        max-height: 35em;
         box-shadow: rgba(0, 0, 0, 0.1) 50px 0px 40px 0px; 
     }
 
     .products img {
-        /* max-height: 28em; */
-        max-height: 100%;
-        width: 40em;
-        /* max-width: 100%; */
-        /* object-fit: cover; */
+        /* max-height: 100%; */
+        max-width: 100%;
         object-fit: contain;
-        /* overflow: visible;  */
     }
 
 
