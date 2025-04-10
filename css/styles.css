@@ -14,8 +14,8 @@ body {
     --site-padding: 1% 16% 1% 16%;
     --dark-colour: #2b2b2b;
     --light-colour: #FFFDFA;
-    --light-purple: #d2bacf;
-    --dark-purple: #88466f;
+    --light-purple: #fff2de;
+    --dark-purple: #854273;
     --line-height: 1.4em;
 }
 
@@ -48,45 +48,52 @@ ol li {
     line-height: var(--line-height);
 }
 
+.large-text {
+    font-size: 7.25em !important;
+    margin: inherit;
+    line-height: 85%;
+}
+
 h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin: 0.5em 0em 0.3em 0em;
     font-weight: 800;
     font-family: "Libre Bodoni", serif;
 }
 
-.large-text {
-    font-size: 7.5em;
-    margin: 0em;
-}
-
 h2 {
-    font-size: 3.1rem;
+    font-size: 3.15rem;
     font-family: "Libre Bodoni", serif;
+    padding-bottom: 0.5em;
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 2.35rem;
     font-family: "Libre Bodoni", serif;
+    padding-bottom: 0.5em;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    padding-bottom: 0.5em;
 }
 
 h5 {
-    font-size: 1.5rem;
-    margin: 0em;
-}
-
-h6 {
     font-size: 1.25rem;
-    margin: 0 0 0.4em 0;
+    margin: 0em;
+    padding-bottom: 0.5em;
 }
 
 p {
     font-size: 1em;
     line-height: var(--line-height);
+    max-width: 60ch;
+    padding-bottom: 0.5em;
+}
+
+h6 {
+    font-size: 0.85rem;
+    margin: 0 0 0.4em 0;
 }
 
 .italics {
@@ -105,7 +112,9 @@ button {
 }
 
 a:link {
-    color: black;
+    color: var(--dark-purple);
+    font-weight: bold;
+    text-decoration: underline var(--dark-purple);
 }
 
 a:visited {
@@ -120,16 +129,13 @@ a:active {
     color: var(--dark-purple);
 }
 
-button:link,  button a:link{
+button:link,  button a:link, button:visited, button a:visited {
     color: white;
+    text-decoration: none;
 }
 
-button:visited, button a:visited {
-    color: whitesmoke;
-}
-
-button:hover, button a:hover {
-    color: lightgrey;
+button:hover {
+    box-shadow: 0.25em 0.25em var(--light-purple);
 }
 
 button:active, button a:active {
@@ -155,6 +161,7 @@ button:active, button a:active {
         background-color: var(--light-colour);
         border-bottom: 0.08em #2b2b2b solid;
         z-index: 998;
+        
     }
 
     #top-notif {
@@ -167,18 +174,23 @@ button:active, button a:active {
     }
 
     .nav-menu {
-        z-index: 990;
-        list-style: none;
-        text-decoration: none;
         z-index: 999;
     }
 
     .nav-menu a {
+        font-size: 1.33rem;
         color: black;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    nav button:hover {
+        box-shadow: none;
     }
 
     .nav-menu i {
-        margin: 0.5em 0em 0.5em 0em;
+        font-size: 2rem;
+        margin: 0em;
     }
 
     .nav-logo {
@@ -220,7 +232,7 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
         text-align: left;
     }
 
@@ -260,16 +272,17 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 0.9fr 1.1fr;
         gap: 4em;
-        padding: var(--site-padding);
-        /* border-bottom: 0.6em solid var(--dark-colour); */
+        padding: 0% 16% 1% 0%;
         padding-bottom: 3em;
+        margin-left: none;
+        padding-left: none;
     }
 
     .about-header img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border-radius: 10% 25%;
+        border-radius: 0 0% 25% 0;
     }
 
     .about-text {
@@ -282,13 +295,14 @@ button:active, button a:active {
     .about-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8em;
+        gap: 5em;
         text-align: start;
         margin-bottom: 4em;
     }
 
     .about-main * {
         list-style: square;
+        margin: 0;
     }
     
 
@@ -304,7 +318,7 @@ button:active, button a:active {
         justify-content: space-between;
         text-align: center;
         gap: 5%;
-        margin: 0em 0em 6em 0em;
+        margin: 0em 0em 8em 0em;
     }
 
     #more {
@@ -324,7 +338,6 @@ button:active, button a:active {
         white-space: nowrap; 
         overflow: auto; 
         gap: 2em; 
-        margin-bottom: 2em; 
         max-height: 25em;
         box-shadow: rgba(0, 0, 0, 0.1) 50px 0px 40px 0px; 
     }
@@ -363,36 +376,40 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
     }
+    
 
-    #contact, #contact-about {
-        background-color: var(--light-colour);
+
+    .contact-background-box {
+        display: grid;
+        /* background-color: var(--light-purple); */
+        margin: var(--site-padding);
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+    }
+
+    .contact-box-text {
+        padding: 2em;
+    }
+    .contact-box-text button {
+        margin-top: 2em;
+    }
+
+
+    #contact-about {
+        /* background-color: var(--light-colour); */
         padding: 4% 15% 4% 15%;
-        margin: 3em 0em 0em 0em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
         justify-content: space-between;
     }
 
-    #contact {
-        grid-template-columns: 1.2fr 0.8fr;
-    }
-
-    #contact-about {
-        padding: 4% 15% 6% 15%;
-        border-top: 0.08em #2b2b2b solid;
-    }
-
     #contact h2, #contact-about h2 {
-        margin: 0.4em 0em 0.6em 0em;
-    }
-
-    #contact button, #contact-about button {
-        margin-top: 1.6em;
+        margin: 0em 0em 0em 0em;
     }
 
     #contact .center-image img {
-        max-height: 24em;
+        max-height: 25em;
         width: 100%;
         border-radius: 2em;
         object-fit: cover;
@@ -441,6 +458,7 @@ button:active, button a:active {
 
 /*FOOTER*/
     footer {
+        margin: 0;
         height: 3em;
         text-align: center;
         padding: var(--site-padding);
@@ -462,35 +480,52 @@ button:active, button a:active {
             margin: 0;
         }
 
+        .large-text {
+            font-size: 7.25em !important;
+            margin: inherit;
+            line-height: 85%;
+        }
+        
         h1 {
-            font-size: 3.8rem;
-            margin: 0.5em 0em 0.5em 0em;
+            font-size: 4.5rem;
+            margin: 0.5em 0em 0.3em 0em;
             font-weight: 800;
+            font-family: "Libre Bodoni", serif;
         }
         
         h2 {
-            font-size: 3rem;
+            font-size: 3.15rem;
+            font-family: "Libre Bodoni", serif;
+            padding-bottom: 0.5em;
         }
         
         h3 {
-            font-size: 2.3rem;
+            font-size: 2.35rem;
+            font-family: "Libre Bodoni", serif;
+            padding-bottom: 0.5em;
         }
         
         h4 {
-            font-size: 1.9rem;
-            margin: 0.5em 0em 1em 0em;
+            font-size: 1.75rem;
+            padding-bottom: 0.5em;
         }
         
         h5 {
-            font-size: 1.5rem;
-        }
-        
-        h6 {
             font-size: 1.25rem;
+            margin: 0em;
+            padding-bottom: 0.5em;
         }
         
         p {
             font-size: 1em;
+            line-height: var(--line-height);
+            max-width: 60ch;
+            padding-bottom: 0.5em;
+        }
+        
+        h6 {
+            font-size: 0.85rem;
+            margin: 0 0 0.4em 0;
         }
 
         .items {
@@ -542,12 +577,6 @@ button:active, button a:active {
     
     .large-text {
         font-size: 6em;
-    }
-
-    h1 {
-        font-size: 3.6rem;
-        margin: 0.5em 0em 0.5em 0em;
-        font-weight: 800;
     }
 
     #top-nav {
@@ -615,10 +644,15 @@ button:active, button a:active {
     .about-header img {
         height: 18em;
         width: 100%;
+        object-fit: cover;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
     }
 
     .about-text {
         margin-top: 0;
+        padding: var(--site-padding);
     }
 
     #product-header {
@@ -649,7 +683,7 @@ button:active, button a:active {
         margin: 0em 0em 2em 0em;
     }
 
-    #contact, #contact-about {
+    #contact, .contact-background-box, #contact-about {
         grid-template-columns: 1fr;
         gap: 2em;
         padding: 4% 8% 5% 8%;
@@ -686,10 +720,6 @@ button:active, button a:active {
 
         .large-text {
             font-size: 5.8em;
-        }
-        
-        p {
-            font-size: 1em;
         }
 
         .nav-menu {
