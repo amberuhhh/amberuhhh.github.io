@@ -233,8 +233,6 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
-        margin-bottom: 2em;
-        text-align: left;
     }
 
     /* .hero-star {
@@ -253,7 +251,7 @@ button:active, button a:active {
         margin-bottom: 0.35em;
     }
 
-    #hero h3 {
+    #hero h3, h4 {
         margin: 1.5em 0em 0.5em 0em;
     }
     
@@ -264,6 +262,29 @@ button:active, button a:active {
     }
 
 
+/* Product headers/heros */
+#product-header {
+    margin: 2% 0% 0% 0%;
+    text-align: left;
+}
+
+#product-header ol {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.product-header-split {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 5em;
+}
+
+.product-header-split-more {
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 
 
@@ -309,6 +330,13 @@ button:active, button a:active {
 
 
 /* MAIN */
+    .showcase {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        margin: 0 16% 3% 16%;
+    }
+
     main {
         margin: var(--site-padding);
     }
@@ -338,41 +366,11 @@ button:active, button a:active {
         gap: 2em;
     }
 
-    .showcase {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 3em;
-    }
-    
     .showcase h2 {
         margin-bottom: 0.20em;
         padding: 0;
     }
 
-
-/* Product headers/heros */
-    #product-header {
-        margin: 2% 0% 3% 0%;
-        text-align: left;
-    }
-
-    #product-header ol {
-        list-style: none;
-        padding: 0;
-        justify-content: center;
-    }
-
-    .product-header-split {
-        display: grid;
-        grid-template-columns: 1.3fr 0.7fr;
-        gap: 5em;
-    }
-
-    .product-header-split-more {
-        margin-bottom: 3em;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 
 
 /* Back and forth text sections for each projects progress */
@@ -405,6 +403,8 @@ button:active, button a:active {
         white-space: nowrap; 
         overflow-x: scroll;
         gap: 1.5em; 
+        margin: 0;
+        padding: 0;
         max-height: 28em;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
