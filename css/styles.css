@@ -14,8 +14,8 @@ body {
     --site-padding: 1% 16% 1% 16%;
     --dark-colour: #2b2b2b;
     --light-colour: #FFFDFA;
-    --light-purple: #fff2de;
-    --dark-purple: #854273;
+    --light-purple: #b27497;
+    --dark-purple: #650144;
     --line-height: 1.4em;
 }
 
@@ -87,7 +87,6 @@ h5 {
 p {
     font-size: 1em;
     line-height: var(--line-height);
-    max-width: 60ch;
     padding-bottom: 0.5em;
 }
 
@@ -126,7 +125,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--dark-purple);
+    color: var(--dark-colour);
 }
 
 button:link,  button a:link, button:visited, button a:visited {
@@ -278,7 +277,7 @@ button:active, button a:active {
         padding-left: none;
     }
 
-    .about-header img {
+    .about-header-image, .about-header img {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -309,7 +308,7 @@ button:active, button a:active {
 
 /*MAIN*/
     main, menu {
-        padding: var(--site-padding);
+        margin: var(--site-padding);
     }
 
     .items {
@@ -332,22 +331,70 @@ button:active, button a:active {
 
 
 
+
+    .text-images {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        gap: 5em;
+        height: auto;
+    }
+
+    .images-text {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        gap: 5em;
+        height: auto;
+    }
+
+    .image-box img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+
     .products { 
-        padding: var(--site-padding);
         display: flex; 
         white-space: nowrap; 
         overflow-x: scroll;
         gap: 1em; 
-        max-height: 35em;
-        box-shadow: rgba(0, 0, 0, 0.1) 50px 0px 40px 0px; 
+        max-height: 28em;
+        box-shadow: rgba(0, 0, 0, 0.1) 30px 0px 30px 0px; 
     }
 
     .products img {
-        /* max-height: 100%; */
+        max-height: 28em;
         max-width: 100%;
         object-fit: contain;
     }
+    
+    .showcase {
+        margin: var(--site-padding);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    
+    .showcase h2 {
+        margin-bottom: 0.20em;
+        padding: 0;
+    }
 
+    .right {
+        text-align: right;
+    }
+/* 
+    .left{
+        background-color: var(--light-purple);
+    } */
 
 
     #product-header {
@@ -633,8 +680,10 @@ button:active, button a:active {
     }
 
     .about-header {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 3em;
+        padding: 0% 0% 1% 0%;
     }
 
     .about-header img {
