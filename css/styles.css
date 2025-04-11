@@ -374,13 +374,9 @@ button:active, button a:active {
 
 
 /* Back and forth text sections for each projects progress */
-    .right {
-        text-align: right;
-    }
-
     .text-images {
         display: grid;
-        grid-template-columns: 0.75fr 1.25fr;
+        grid-template-columns: 0.85fr 1.15fr;
         max-height: 30em;
         margin: 0;
         padding: 0;
@@ -389,7 +385,7 @@ button:active, button a:active {
 
     .images-text {
         display: grid;
-        grid-template-columns: 1.25fr 0.75fr;
+        grid-template-columns: 1.15fr 0.85fr;
         max-height: 30em;
         margin: 0;
         padding: 0;
