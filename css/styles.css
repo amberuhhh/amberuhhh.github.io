@@ -269,9 +269,9 @@ button:active, button a:active {
         /* ABOUT PAGE */
     .about-header {
         display: grid;
-        grid-template-columns: 0.9fr 1.1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 4em;
-        padding: 0% 16% 1% 0%;
+        margin: 0% 16% 1% 0%;
         padding-bottom: 3em;
         margin-left: none;
         padding-left: none;
@@ -296,10 +296,10 @@ button:active, button a:active {
         grid-template-columns: 1fr 1fr;
         gap: 5em;
         text-align: start;
-        margin-bottom: 4em;
+        margin-bottom: 3em;
     }
 
-    .about-main * {
+    .about-main *, .about-text h3, .about-text li {
         list-style: square;
         margin: 0;
     }
@@ -308,7 +308,7 @@ button:active, button a:active {
 
 /*MAIN*/
     main, menu {
-        margin: var(--site-padding);
+        margin: 1% 16% 6% 16%;
     }
 
     .items {
@@ -317,7 +317,7 @@ button:active, button a:active {
         justify-content: space-between;
         text-align: center;
         gap: 5%;
-        margin: 0em 0em 8em 0em;
+        /* margin: 0em 0em 8em 0em; */
     }
 
     #more {
@@ -412,10 +412,10 @@ button:active, button a:active {
     
 
 
-    .contact-background-box {
+    #contact {
+        margin: 2% 16% 2% 16%;
         display: grid;
         /* background-color: var(--light-purple); */
-        margin: var(--site-padding);
         grid-template-columns: 1fr 1fr;
         gap: 5%;
     }
@@ -430,7 +430,8 @@ button:active, button a:active {
 
     #contact-about {
         /* background-color: var(--light-colour); */
-        padding: 4% 15% 4% 15%;
+        margin: var(--site-padding);
+        padding: 3em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
@@ -442,7 +443,7 @@ button:active, button a:active {
     }
 
     #contact .center-image img {
-        max-height: 25em;
+        max-height: 24em;
         width: 100%;
         border-radius: 2em;
         object-fit: cover;
@@ -564,6 +565,7 @@ button:active, button a:active {
         .items {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            padding: 0;
         }
 
         .product-header-split {
@@ -574,7 +576,6 @@ button:active, button a:active {
         .about-header {
             grid-template-columns: 1fr 1fr;
             gap: 4em;
-            /* padding-bottom: 3em; */
         }
 
         .about-text {
@@ -593,10 +594,11 @@ button:active, button a:active {
 
         .about-main {
             display: block;
+            margin: var(--site-padding)
         }
 
         .about-main div {
-            margin-bottom: 5em;
+            margin-bottom: 2em;
         }
     
 }
@@ -669,16 +671,28 @@ button:active, button a:active {
         width: auto;
     }
 
+
     .about-header {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 3em;
-        padding: 0% 0% 1% 0%;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 4em;
+        margin: 0% 16% 1% 0%;
+        padding-bottom: 3em;
+        margin-left: none;
+        padding-left: none;
+    }
+
+
+    .about-header {
+        display: block;
+        margin: 0% 0% 1% 0%;
+        gap: 4em;
+
     }
 
     .about-header img {
-        height: 18em;
-        width: 100%;
+        max-height: 20em;
+        min-width: 100%;
         object-fit: cover;
         border-radius: 0;
         padding: 0;
@@ -686,8 +700,7 @@ button:active, button a:active {
     }
 
     .about-text {
-        margin-top: 0;
-        padding: var(--site-padding);
+        margin: var(--site-padding);
     }
 
     #product-header {
@@ -714,14 +727,14 @@ button:active, button a:active {
         width: 80%;
     }
 
-    .items {
+    /* .items {
         margin: 0em 0em 2em 0em;
-    }
+    } */
 
     #contact, .contact-background-box, #contact-about {
         grid-template-columns: 1fr;
         gap: 2em;
-        padding: 4% 8% 5% 8%;
+        /* padding: 4% 8% 5% 8%; */
     }
 
     #contact-about h2 {
@@ -801,10 +814,10 @@ button:active, button a:active {
             /* border-top: 0.05em solid var(--dark-colour); */
         }
 
-        #contact {
+        /* #contact {
             padding: 3% 5% 14% 5%;
-        }
-
+        } */
+/* 
         #contact-about {
             padding: 3% 5% 20% 5%;
         }
@@ -812,5 +825,5 @@ button:active, button a:active {
         #contact img {
             max-height: 16em;
             border-radius: 2em;
-        }
+        } */
 }
