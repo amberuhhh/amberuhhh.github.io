@@ -276,8 +276,14 @@ button:active, button a:active {
 
 .product-header-split {
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-columns: 1.15fr 0.85fr;
     gap: 5em;
+}
+
+.product-header-split img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .product-header-split-more {
@@ -390,6 +396,11 @@ button:active, button a:active {
         margin: 0;
         padding: 0;
         gap: 3em;
+    }
+    
+    .showcase-text-box {
+        height: inherit;
+        overflow: scroll;
     }
 
 
@@ -717,16 +728,9 @@ button:active, button a:active {
         margin: 1% 0% 2% 0%;
     } 
 
-    /* .products { 
-        gap: 2em; 
-        height: 20em;
+    .showcase {
+        display: block;
     }
-
-    .products img {
-        height: 20em;
-        object-fit: cover;
-        max-width: 100%;
-    } */
 
     #more {
         flex-flow: wrap;
