@@ -59,6 +59,7 @@ h1 {
     margin: 0.5em 0em 0.3em 0em;
     font-weight: 800;
     font-family: "Libre Bodoni", serif;
+    margin: 0.25em 0 0 0;
 }
 
 h2 {
@@ -71,6 +72,7 @@ h3 {
     font-size: 2.35rem;
     font-family: "Libre Bodoni", serif;
     padding-bottom: 0.5em;
+    margin: 0;
 }
 
 h4 {
@@ -244,7 +246,7 @@ button:active, button a:active {
     } */
 
     .hero-card p {
-        width: 60%;
+        width: 70ch;
     }
 
     #hero h1 {
@@ -290,7 +292,6 @@ button:active, button a:active {
         list-style: square;
     }
 
-
     .about-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -306,9 +307,14 @@ button:active, button a:active {
     
 
 
-/*MAIN*/
-    main, menu {
-        margin: 1% 16% 6% 16%;
+
+/* MAIN */
+    main {
+        margin: 1% 16% 8% 16%;
+    }
+
+    menu {
+        margin: 3em 16% 3em 16%;
     }
 
     .items {
@@ -317,7 +323,7 @@ button:active, button a:active {
         justify-content: space-between;
         text-align: center;
         gap: 5%;
-        /* margin: 0em 0em 8em 0em; */
+        height: 100%;
     }
 
     #more {
@@ -326,48 +332,9 @@ button:active, button a:active {
         justify-content: center;
         width: auto;
         gap: 2em;
-        margin-bottom: 3em;
     }
 
-
-
-
-    .text-images {
-        display: grid;
-        grid-template-columns: 0.75fr 1.25fr;
-        max-height: 30em;
-        margin: 0;
-        padding: 0;
-        gap: 3em;
-    }
-
-    .images-text {
-        display: grid;
-        grid-template-columns: 1.25fr 0.75fr;
-        max-height: 30em;
-        margin: 0;
-        padding: 0;
-        gap: 3em;
-    }
-
-    .products { 
-        display: flex; 
-        white-space: nowrap; 
-        overflow-x: scroll;
-        gap: 1.5em; 
-        max-height: 28em;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
-    }
-
-    .products img {
-        max-height: 27em;
-        max-width: 100%;
-        object-fit: contain;
-    }
-    
     .showcase {
-        margin: var(--site-padding);
         display: grid;
         grid-template-columns: 1fr;
         gap: 3em;
@@ -378,15 +345,8 @@ button:active, button a:active {
         padding: 0;
     }
 
-    .right {
-        text-align: right;
-    }
-/* 
-    .left{
-        background-color: var(--light-purple);
-    } */
 
-
+/* Product headers/heros */
     #product-header {
         margin: 2% 0% 3% 0%;
         text-align: left;
@@ -409,13 +369,56 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+
+/* Back and forth text sections for each projects progress */
+    .right {
+        text-align: right;
+    }
+
+    .text-images {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+        max-height: 30em;
+        margin: 0;
+        padding: 0;
+        gap: 3em;
+    }
+
+    .images-text {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        max-height: 30em;
+        margin: 0;
+        padding: 0;
+        gap: 3em;
+    }
+
+
+/* Gallery scroll */
+    .products { 
+        display: flex; 
+        white-space: nowrap; 
+        overflow-x: scroll;
+        gap: 1.5em; 
+        max-height: 28em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    }
+
+    .products img {
+        max-height: 27em;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+
+
     
-
-
+/* Contact Sections */
     #contact {
         margin: 2% 16% 2% 16%;
         display: grid;
-        /* background-color: var(--light-purple); */
         grid-template-columns: 1fr 1fr;
         gap: 5%;
     }
@@ -423,13 +426,12 @@ button:active, button a:active {
     .contact-box-text {
         padding: 2em;
     }
+
     .contact-box-text button {
         margin-top: 2em;
     }
 
-
     #contact-about {
-        /* background-color: var(--light-colour); */
         margin: var(--site-padding);
         padding: 3em;
         display: grid;
@@ -460,12 +462,12 @@ button:active, button a:active {
 
 
 
-
+/* Item cards such as home page project cards and each page more section */
     .item-card {
         /* border: 0.05em solid var(--dark-colour); */
         height: 13em, 100%;
         width: 100%;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
 
@@ -499,6 +501,14 @@ button:active, button a:active {
         border-top: 0.08em #2b2b2b solid;
         background-color: white;
     }
+
+
+
+
+
+
+
+
 
 
 
