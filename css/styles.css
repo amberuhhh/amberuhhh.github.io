@@ -281,9 +281,13 @@ button:active, button a:active {
 }
 
 .product-header-split img, .product-header-split-image {
+    float: right;
     width: 100%;
     height: 100%;
     object-fit: contain;
+    padding: 0;
+    margin:0;
+    /* z-index: 0; */
 }
 
 .product-header-split-more {
@@ -401,9 +405,6 @@ button:active, button a:active {
         gap: 3em;
     }
     
-    .showcase-text-box {
-        height: inherit;
-    }
 
     /* #project-gallery {
         height: 100%;
@@ -411,6 +412,7 @@ button:active, button a:active {
 
 /* Gallery scroll */
     .products { 
+        order: 2;
         display: flex; 
         white-space: nowrap; 
         overflow-x: scroll;
@@ -428,6 +430,10 @@ button:active, button a:active {
         object-fit: contain;
     }
 
+    .showcase-text-box {
+        order: 1;
+        height: inherit;
+    }
 
 
     
