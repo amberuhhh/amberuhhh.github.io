@@ -280,7 +280,7 @@ button:active, button a:active {
     gap: 5em;
 }
 
-.product-header-split img {
+.product-header-split img, .product-header-split-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -365,6 +365,7 @@ button:active, button a:active {
     }
 
     #more {
+        margin: var(--site-padding);
         display: flex;
         flex-flow: no-wrap;
         justify-content: center;
@@ -403,8 +404,8 @@ button:active, button a:active {
     .showcase-text-box {
         height: inherit;
     }
-/* 
-    #project-gallery {
+
+    /* #project-gallery {
         height: 100%;
     } */
 
@@ -413,7 +414,7 @@ button:active, button a:active {
         display: flex; 
         white-space: nowrap; 
         overflow-x: scroll;
-        gap: 1.5em; 
+        gap: 1em; 
         margin: 0;
         padding: 0;
         max-height: 28em;
@@ -422,8 +423,8 @@ button:active, button a:active {
     }
 
     .products img {
-        max-height: 27em;
-        max-width: 100%;
+        max-height: 28em;
+        max-width: 85%;
         object-fit: contain;
     }
 
@@ -487,7 +488,7 @@ button:active, button a:active {
     }
 
     .more-card {
-        height: 12em;
+        max-height: 12em, 100%;
         width: 20em;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 20px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
@@ -531,7 +532,7 @@ button:active, button a:active {
 /* Media query for IPad Pros - less tha 1024*/
     @media screen and (max-width: 64em) {
         :root {
-            --site-padding: 2% 12% 2% 12%;
+            --site-padding: 2% 10% 2% 10%;
         }
 
 
@@ -584,9 +585,10 @@ button:active, button a:active {
             margin: 0 0 0.4em 0;
         }    
         
-        .showcase-text-box {
-            /* height: inherit; */
-            overflow: scroll;
+        .text-images, .images-text {
+            grid-template-columns: 1fr;
+            max-height: 100%;
+            gap: 0em;
         }
 
         .items {
@@ -612,11 +614,6 @@ button:active, button a:active {
         #items, #more {
             gap: 1em;
             grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-        }
-
-        .more-card {
-            height: 10em;
-            width: 80%;
         }
 
         .about-main {
@@ -747,17 +744,6 @@ button:active, button a:active {
         margin: 1% 8% 5% 8%;
         gap: 3em;
    }
-
-    .showcase-text-box {
-        max-height: inherit;
-        overflow: scroll;
-    }
-
-    .text-images, .images-text {
-        grid-template-columns: 1fr;
-        max-height: 100%;
-        gap: 0em;
-    }
 
     menu {
         margin: var(--site-padding);
