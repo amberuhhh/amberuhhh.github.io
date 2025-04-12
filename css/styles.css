@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-    --site-padding: 1.5% 16% 1.5% 16%;
+    --site-padding: 1.5% 15% 1.5% 15%;
     --dark-colour: #2b2b2b;
     --light-colour: #FFFDFA;
     --light-purple: #b27497;
@@ -24,30 +24,21 @@ body {
     min-width: 100%;
     max-height: 2em;
     z-index: -10;
+    margin: 1% 0 1% 0;
+    padding: 0;
+}
+
+.hero-star {
+    float: right;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -10;
     margin: 0;
     padding: 0;
 }
 
-/* .star-parent {
-    width: 100%;
-    padding: 0;
-    margin:0;
-    justify-items: right;
-}
 
-.star {
-    right: 0;
-    width: 300px;  
-    aspect-ratio: 1;
-    background: #d2bacf;
-    clip-path: polygon(50% 0,
-      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-     );
-  } */
-  
 img {
     max-width: 36em;
     height: auto;
@@ -241,7 +232,7 @@ button:active, button a:active {
     #hero {
         display: grid;
         grid-template-columns: 1fr;
-        /* gap: 2em; */
+        gap: 2em;
         margin-bottom: 3em;
     }
 
@@ -274,7 +265,7 @@ button:active, button a:active {
 
 /* Product headers/heros */
 #product-header {
-    margin: 2% 0% 0% 0%;
+    margin-top: 2%;
     text-align: left;
 }
 
@@ -286,7 +277,7 @@ button:active, button a:active {
 
 .product-header-split {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1.25fr 0.75fr;
     gap: 5em;
 }
 
@@ -313,11 +304,8 @@ button:active, button a:active {
     .about-header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4em;
+        gap: 2em;
         margin: 0% 16% 1% 0%;
-        padding-bottom: 3em;
-        margin-left: none;
-        padding-left: none;
     }
 
     .about-header-image, .about-header img {
@@ -336,16 +324,19 @@ button:active, button a:active {
     .about-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5em;
+        gap: 0em;
         text-align: start;
         margin-bottom: 3em;
     }
 
-    .about-main *, .about-text h3, .about-text li {
+    .about-main *, .about-text li {
         list-style: square;
         margin: 0;
     }
     
+    .about-text h3 {
+        padding: 0;
+    }
 
 
 
@@ -354,7 +345,6 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
-        margin: 0 16% 3% 16%;
     }
 
     main {
@@ -394,7 +384,7 @@ button:active, button a:active {
     }
 
     .showcase h2 {
-        margin-bottom: 0.20em;
+        margin: 0em 0 0.3em 0;
         padding: 0;
     }
 
@@ -438,12 +428,6 @@ button:active, button a:active {
         max-width: 85%;
         object-fit: contain;
     }
-
-    #project-gallery h2 {
-        margin: 0;
-        padding: 0;
-    }
-
 
     
 /* Contact Sections */
@@ -821,7 +805,7 @@ button:active, button a:active {
         }
 
         .large-text {
-            font-size: 6.5em!important;
+            font-size: 6em!important;
         }
 
         h1 {
