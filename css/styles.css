@@ -352,7 +352,7 @@ button:active, button a:active {
     }
 
     #home-main {
-        margin: 1% 16% 8% 16%;
+        margin-bottom: 8%;
     }
 
     .items {
@@ -428,18 +428,10 @@ button:active, button a:active {
     
 /* Contact Sections */
     #contact {
-        margin: 2% 16% 2% 16%;
+        margin: var(--site-padding);
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5%;
-    }
-
-    .contact-box-text {
-        padding: 2em;
-    }
-
-    .contact-box-text button {
-        margin-top: 2em;
     }
 
     #contact-about {
@@ -462,6 +454,14 @@ button:active, button a:active {
         object-fit: cover;
         margin: 0;
         padding: 0;
+    }
+
+    .contact-box-text {
+        padding: 2em;
+    }
+
+    .contact-box-text button {
+        margin-top: 2em;
     }
 
     #contact-about .radius-logo img {
@@ -527,16 +527,14 @@ button:active, button a:active {
 /* Media query for IPad Pros - less tha 1024*/
     @media screen and (max-width: 64em) {
         :root {
-            --site-padding: 1% 12% 1% 12%;
+            --site-padding: 2% 12% 2% 12%;
         }
 
-        .large-text {
-            font-size: 6.1em;
-            margin: 0;
-        }
 
         .large-text {
             font-size: 7.25em !important;
+            font-size: 6.1em;
+            margin: 0;
             margin: inherit;
             line-height: 85%;
         }
@@ -574,7 +572,6 @@ button:active, button a:active {
         p {
             font-size: 1em;
             line-height: var(--line-height);
-            max-width: 60ch;
             padding-bottom: 0.5em;
         }
         
@@ -621,6 +618,10 @@ button:active, button a:active {
         .about-main div {
             margin-bottom: 2em;
         }
+
+        #contact {
+            margin: var(--site-padding);
+        }
     
 }
 
@@ -632,7 +633,7 @@ button:active, button a:active {
     }
     
     .large-text {
-        font-size: 6em;
+        font-size: 7em!important;
     }
 
     #top-nav {
@@ -741,14 +742,9 @@ button:active, button a:active {
         width: 80%;
     }
 
-    /* .items {
-        margin: 0em 0em 2em 0em;
-    } */
-
     #contact, .contact-background-box, #contact-about {
         grid-template-columns: 1fr;
-        gap: 2em;
-        /* padding: 4% 8% 5% 8%; */
+        gap: 1em;
     }
 
     #contact-about h2 {
@@ -759,8 +755,8 @@ button:active, button a:active {
     #contact .center-image img {
         max-height: 20em;
         max-width: 100%;
+        margin-top: 1em;
         border-radius: 2em;
-        object-fit: cover;
     }
 
     #contact button, #contact-about button {
@@ -781,7 +777,11 @@ button:active, button a:active {
         }
 
         .large-text {
-            font-size: 5.8em;
+            font-size: 6.5em!important;
+        }
+
+        h1 {
+            font-size: 3em;
         }
 
         .nav-menu {
@@ -828,16 +828,14 @@ button:active, button a:active {
             /* border-top: 0.05em solid var(--dark-colour); */
         }
 
-        /* #contact {
-            padding: 3% 5% 14% 5%;
-        } */
-/* 
-        #contact-about {
-            padding: 3% 5% 20% 5%;
-        }
-
-        #contact img {
+        #contact .center-image img {
             max-height: 16em;
-            border-radius: 2em;
-        } */
+            width: 100%;
+            margin-top: 1.75em;
+        }
+    
+        .contact-box-text {
+            padding: 0em;
+        }
+ 
 }
