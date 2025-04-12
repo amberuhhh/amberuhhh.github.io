@@ -400,9 +400,11 @@ button:active, button a:active {
     
     .showcase-text-box {
         height: inherit;
-        overflow: scroll;
     }
-
+/* 
+    #project-gallery {
+        height: 100%;
+    } */
 
 /* Gallery scroll */
     .products { 
@@ -578,6 +580,11 @@ button:active, button a:active {
         h6 {
             font-size: 0.85rem;
             margin: 0 0 0.4em 0;
+        }    
+        
+        .showcase-text-box {
+            /* height: inherit; */
+            overflow: scroll;
         }
 
         .items {
@@ -729,8 +736,24 @@ button:active, button a:active {
         margin: 1% 0% 2% 0%;
     } 
 
-    .showcase {
-        display: block;
+    .products {
+        height: 20em;
+    }
+
+/* Back and forth text sections for each projects progress */
+   .showcase {
+        gap: 3em;
+   }
+
+    .showcase-text-box {
+        max-height: inherit;
+        overflow: scroll;
+    }
+
+    .text-images, .images-text {
+        grid-template-columns: 1fr;
+        max-height: 100%;
+        gap: 0em;
     }
 
     #more {
@@ -836,6 +859,7 @@ button:active, button a:active {
     
         .contact-box-text {
             padding: 0em;
+            margin-bottom: 2em;
         }
  
 }
