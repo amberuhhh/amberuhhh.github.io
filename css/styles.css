@@ -744,7 +744,7 @@ button:active, button a:active {
 
 /* Back and forth text sections for each projects progress */
    .showcase {
-        margin: var(--site-padding);
+        margin: 1% 8% 5% 8%;
         gap: 3em;
    }
 
