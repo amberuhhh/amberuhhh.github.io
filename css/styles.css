@@ -347,10 +347,6 @@ button:active, button a:active {
         margin: var(--site-padding);
     }
 
-    menu {
-        margin: 3em 16% 3em 16%;
-    }
-
     #home-main {
         margin-bottom: 8%;
     }
@@ -364,12 +360,18 @@ button:active, button a:active {
         height: 100%;
     }
 
+    menu {
+        margin: var(--site-padding);
+    }
+
     #more {
         display: flex;
         flex-flow: no-wrap;
         justify-content: center;
-        width: auto;
+        max-width: 100%;
         gap: 2em;
+        padding: 0;
+        margin: 0;
     }
 
     .showcase h2 {
@@ -742,6 +744,7 @@ button:active, button a:active {
 
 /* Back and forth text sections for each projects progress */
    .showcase {
+        margin: var(--site-padding);
         gap: 3em;
    }
 
@@ -756,8 +759,16 @@ button:active, button a:active {
         gap: 0em;
     }
 
+    menu {
+        margin: var(--site-padding);
+    }
+
     #more {
         flex-flow: wrap;
+        max-width: 100%;
+        gap: 2em;
+        padding: 0;
+        margin: 0;
     }
 
     .more-card {
