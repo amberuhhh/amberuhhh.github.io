@@ -390,7 +390,7 @@ button:active, button a:active {
     .text-images {
         display: grid;
         grid-template-columns: 0.85fr 1.15fr;
-        max-height: 30em;
+        max-height: 35em;
         margin: 0;
         padding: 0;
         gap: 3em;
@@ -399,7 +399,7 @@ button:active, button a:active {
     .images-text {
         display: grid;
         grid-template-columns: 1.15fr 0.85fr;
-        max-height: 30em;
+        max-height: 35em;
         margin: 0;
         padding: 0;
         gap: 3em;
@@ -412,7 +412,6 @@ button:active, button a:active {
 
 /* Gallery scroll */
     .products { 
-        order: 2;
         display: flex; 
         white-space: nowrap; 
         overflow-x: scroll;
@@ -430,10 +429,10 @@ button:active, button a:active {
         object-fit: contain;
     }
 
-    .showcase-text-box {
-        order: 1;
-        height: inherit;
-    }
+    /* .showcase-text-box {
+        max-height: 28em;
+        overflow: auto;
+    } */
 
 
     
@@ -601,6 +600,15 @@ button:active, button a:active {
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding: 0;
+        }
+
+        .showcase-text-box {
+            order: 1;
+            height: inherit;
+        }
+
+        .products{ 
+            order: 2;
         }
 
         .product-header-split {
