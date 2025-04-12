@@ -241,7 +241,8 @@ button:active, button a:active {
     #hero {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2em;
+        /* gap: 2em; */
+        margin-bottom: 3em;
     }
 
     /* .hero-star {
@@ -264,12 +265,12 @@ button:active, button a:active {
         margin: 1.5em 0em 0.5em 0em;
     }
     
-    #hero img {
+    /* #hero img {
         object-fit: cover;
         height: 100%;
         width: 100%;
     }
-
+ */
 
 /* Product headers/heros */
 #product-header {
@@ -364,6 +365,11 @@ button:active, button a:active {
         margin-bottom: 8%;
     }
 
+    #home-main h2{
+        margin-bottom: 0;
+    }
+
+
     .items {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -374,11 +380,10 @@ button:active, button a:active {
     }
 
     menu {
-        margin: var(--site-padding);
+        margin: 3% 16% 4% 16%;
     }
 
     #more {
-        margin: var(--site-padding);
         display: flex;
         flex-flow: no-wrap;
         justify-content: center;
@@ -415,16 +420,12 @@ button:active, button a:active {
     }
     
 
-    /* #project-gallery {
-        height: 100%;
-    } */
-
 /* Gallery scroll */
     .products { 
         display: flex; 
         white-space: nowrap; 
         overflow-x: scroll;
-        gap: 1em; 
+        gap: 5%; 
         margin: 0;
         padding: 0;
         max-height: 28em;
@@ -438,10 +439,10 @@ button:active, button a:active {
         object-fit: contain;
     }
 
-    /* .showcase-text-box {
-        max-height: 28em;
-        overflow: auto;
-    } */
+    #project-gallery h2 {
+        margin: 0;
+        padding: 0;
+    }
 
 
     
