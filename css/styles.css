@@ -363,26 +363,27 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
-        margin: 0% 16% 1% 0%;
     }
 
     .about-header-image, .about-header img {
         height: 100%;
-        width: 100%;
+        max-width: 100%;
         object-fit: cover;
-        border-radius: 0 0% 25% 0;
+        border-radius: 0 0 0 25%;
+        order: 2;
     }
 
     .about-text {
-        margin-top: 10%;
+        margin: 10% 0% 0% 30%;
         justify-content: space-evenly;
         list-style: square;
+        order: 1;
     }
 
     .about-main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0em;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
         text-align: start;
         margin-bottom: 3em;
     }
@@ -725,7 +726,7 @@ button:active, button a:active {
         }
 
         .about-text {
-            margin-top: 8%;
+            margin: 8% 0% 0% 22%;
         }    
 
         #items, #more {
@@ -817,23 +818,24 @@ button:active, button a:active {
     }
 
     .about-header {
-        display: block;
+        grid-template-columns: 1fr;
         margin: 0% 0% 1% 0%;
         gap: 4em;
-
     }
 
-    .about-header img {
+    .about-header-image, .about-header img {
         max-height: 20em;
         min-width: 100%;
         object-fit: cover;
         border-radius: 0;
         padding: 0;
         margin: 0;
+        order: 1;
     }
 
     .about-text {
         margin: var(--site-padding);
+        order: 2;
     }
 
     #product-header {
