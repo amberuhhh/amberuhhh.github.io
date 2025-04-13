@@ -3,6 +3,54 @@
 Bodoni Moda (Didot replacement) */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* BRUSH PEN */
+@import url("https://use.typekit.net/csp8tva.css"); 
+    /* 
+        font-family: "modern-love", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+    */
+
+/* NEW SPIRIT */
+@import url("https://use.typekit.net/csp8tva.css");
+/* https://fonts.adobe.com/fonts/gelica#fonts-section */
+/* 
+            Gelica Light
+            font-family: "gelica", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+
+            Gelica Regular
+            font-family: "gelica", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            Gelica Italic
+            font-family: "gelica", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+
+            Gelica Medium
+            font-family: "gelica", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+
+            Gelica SemiBold
+            font-family: "gelica", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+
+            Gelica Bold
+            font-family: "gelica", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+
+            Gelica Black
+            font-family: "gelica", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        */
+
 body {
     padding: 0;
     margin: 0;
@@ -16,9 +64,9 @@ body {
     --light-colour: #FFFDFA;
     --light-purple: #b27497;
     --dark-purple: #650144;
-    --line-height: 1.4em;
+    --line-height: 1.5em;
 }
-
+/* 
 svg {
     background-color: transparent;
     display: block;
@@ -27,7 +75,7 @@ svg {
     z-index: -10;
     margin: 1% 0 1% 0;
     padding: 0;
-}
+} */
 
 .hr-line {
     display: block;
@@ -37,7 +85,7 @@ svg {
     margin: 1% 0 1% 0;
     padding: 0;
 }
-
+/* 
 .hero-star {
     float: right;
     display: block;
@@ -46,7 +94,7 @@ svg {
     z-index: -10;
     margin: 0;
     padding: 0;
-}
+} */
 
 
 img {
@@ -59,46 +107,59 @@ ol li {
 }
 
 .large-text {
-    font-size: 7.25em !important;
+    font-size: 8em !important;
     margin: inherit;
-    line-height: 85%;
+    line-height: 95%;
+    font-family: "modern-love", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
 }
 
 h1 {
-    font-size: 4.5rem;
-    margin: 0.5em 0em 0.3em 0em;
-    font-weight: 800;
-    font-family: "Libre Bodoni", serif;
-    margin: 0.25em 0 0 0;
+    font-size: 6rem;
+    font-family: "gelica", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 98%;
+    margin: 0;
+    padding-bottom: 0.25em;
 }
 
 h2 {
-    font-size: 3.15rem;
-    font-family: "Libre Bodoni", serif;
+    font-size: 3.55rem;
+    font-family: "gelica", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 98%;
+    margin: 0;
     padding-bottom: 0.5em;
 }
 
 h3 {
     font-size: 2.35rem;
-    font-family: "Libre Bodoni", serif;
-    padding-bottom: 0.5em;
+    font-family: "gelica", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 0;
+    padding-bottom: 0.5em;
 }
 
 h4 {
     font-size: 1.75rem;
+    margin: 1em 0em 0.75em 0em;
     padding-bottom: 0.5em;
 }
 
 h5 {
     font-size: 1.25rem;
-    margin: 0em;
+    margin: 0;
     padding-bottom: 0.5em;
 }
 
 p {
     font-size: 1em;
     line-height: var(--line-height);
+    margin: 0;
     padding-bottom: 0.5em;
 }
 
@@ -245,21 +306,14 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
-        margin-bottom: 3em;
+        margin: 3em 0em 3em 0em;
     }
 
     .hero-card p {
         width: 70ch;
     }
 
-    #hero h1 {
-        margin-bottom: 0.35em;
-    }
 
-    #hero h3, h4 {
-        margin: 1.5em 0em 0.5em 0em;
-    }
-    
 
     /* Product headers/heros */
     #product-header {
@@ -280,6 +334,7 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1.1fr 0.9fr;
         gap: 3em;
+        padding: 2em 0em 2em 0em;
     }
 
     .product-text {
@@ -567,52 +622,38 @@ button:active, button a:active {
         }
 
         .large-text {
-            font-size: 7.25em !important;
-            font-size: 6.1em;
+            font-size: 7em !important;
             margin: 0;
-            margin: inherit;
-            line-height: 85%;
         }
         
         h1 {
-            font-size: 4.5rem;
-            margin: 0.5em 0em 0.3em 0em;
+            font-size: 5rem;
+            margin: 0em;
             font-weight: 800;
-            font-family: "Libre Bodoni", serif;
         }
         
         h2 {
             font-size: 3.15rem;
-            font-family: "Libre Bodoni", serif;
-            padding-bottom: 0.5em;
         }
         
         h3 {
             font-size: 2.35rem;
-            font-family: "Libre Bodoni", serif;
-            padding-bottom: 0.5em;
         }
         
         h4 {
             font-size: 1.75rem;
-            padding-bottom: 0.5em;
         }
         
         h5 {
             font-size: 1.25rem;
-            margin: 0em;
-            padding-bottom: 0.5em;
         }
         
         p {
             font-size: 1em;
-            line-height: var(--line-height);
-            padding-bottom: 0.5em;
         }
         
         h6 {
             font-size: 0.85rem;
-            margin: 0 0 0.4em 0;
         }    
         
         .text-images, .images-text {
@@ -638,9 +679,8 @@ button:active, button a:active {
 
         .product-header {
             grid-template-columns: 1fr;
-            gap: 1em;
+            gap: 2em;
             margin: 0;
-            padding: 0;
         }    
 
         .product-text {
@@ -864,11 +904,13 @@ button:active, button a:active {
         }
 
         .large-text {
-            font-size: 6em!important;
+            font-size: 4.9em!important;
+            margin: 0;
+            padding: 0;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 4em;
         }
 
         header {
