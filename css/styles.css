@@ -668,6 +668,17 @@ button:active, button a:active {
             margin-bottom: 0em;
         }
 
+        .final-products {
+            height: auto;
+            grid-template-columns: 1fr;
+            gap: 1em;
+       }
+    
+       .final-products img {
+            max-height: 100%;
+            max-width: 100%;
+       }
+
         .about-header {
             grid-template-columns: 1fr 1fr;
             gap: 4em;
