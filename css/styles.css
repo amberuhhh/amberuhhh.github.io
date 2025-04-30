@@ -254,7 +254,7 @@ button:active, button a:active {
 
     .nav-menu a {
         font-size: 1.33rem;
-        color: black;
+        /* color: black; */
         text-decoration: none;
         list-style: none;
     }
@@ -293,6 +293,10 @@ button:active, button a:active {
     }
 
     .hamburger {
+        display: none;
+    }
+
+    #nav-projects-dropdown {
         display: none;
     }
 
@@ -335,7 +339,7 @@ button:active, button a:active {
         display: grid;
         grid-template-columns: 1.1fr 0.9fr;
         gap: 3em;
-        padding: 2em 0em 2em 0em;
+        padding: 0em 0em 2em 0em;
     }
 
     .product-text {
@@ -683,6 +687,8 @@ button:active, button a:active {
             grid-template-columns: 1fr;
             gap: 2em;
             margin: 0;
+            margin-top: 0;
+
         }    
 
         .product-text {
@@ -795,6 +801,11 @@ button:active, button a:active {
         display: block; 
         top: 10em;
         z-index: 800;
+    }
+
+    #nav-projects-dropdown {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .nav-menu button {
