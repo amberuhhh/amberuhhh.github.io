@@ -141,7 +141,11 @@ h6 {
 
 
 /* BUTTONS */
-button, button a {
+i {
+    padding: 0em 0.5em 0em 0.5em;
+}
+
+button {
     color: white;
     background-color: var(--light-purple);
     padding: 0.9em;
