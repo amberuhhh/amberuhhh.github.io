@@ -89,7 +89,7 @@ h1 {
 h2 {
     font-size: 40px;
     font-family: "gelica", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     line-height: 98%;
     margin: 0;
@@ -141,7 +141,7 @@ h6 {
 
 
 /* BUTTONS */
-button {
+button, button a {
     color: white;
     background-color: var(--light-purple);
     padding: 0.9em;
@@ -474,10 +474,6 @@ button:active, button a:active {
         line-height: 1.35em;
     }
 
-    .showcase-text-box li, .final-showcase-text-box li {
-        list-style-image: url('just-star.png');
-    }
-
     .final-products {
         height: auto;
         display: grid;
@@ -492,6 +488,7 @@ button:active, button a:active {
         margin: 0;
         padding: 0;
    }
+
 
 /* Gallery scroll */
     .products { 
@@ -513,15 +510,45 @@ button:active, button a:active {
         object-fit: contain;
     }
     
+
+/* Art Gallery */
+    /* ART GALLERY SECTION */
+    #art-gallery {
+        padding: var(--site-padding);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url("../images/my-brand/grid-horizontal.png");
+    }
+
+    #art-gallery img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .art-gallery-text-box {
+        padding: 2em;
+        background-color: white;
+    }
+
+    /* ART GALLERY PAGE */
+    #art-gallery-main {
+
+    }
+
+    .art-card{
+        
+    }
+
 /* Contact Sections */
     #contact {
         margin: var(--site-padding);
+        padding: 0em 5em 0em 5em;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5%;
+        gap: 5em;
     }
 
-    #contact-about {
+    #contact-get-in-touch {
         margin: var(--site-padding);
         padding: 3em;
         display: grid;
@@ -529,34 +556,9 @@ button:active, button a:active {
         gap: 2em;
         justify-content: space-between;
     }
-
-    #contact h2, #contact-about h2 {
-        margin: 0em 0em 0em 0em;
-    }
-
-    #contact .center-image img {
-        max-height: 24em;
-        width: 100%;
-        border-radius: 2em;
-        object-fit: cover;
-        margin: 0;
-        padding: 0;
-    }
-
-    .contact-box-text {
-        padding: 2em;
-    }
-
-    .contact-box-text button {
-        margin-top: 2em;
-    }
-
-    #contact-about .radius-logo img {
-        border-radius: 0em;
-        max-width: 62%;
-        min-width: 12em;
-        margin: 2em 0em 0.8em 0em;
-    }
+/* 
+    #contact-links {
+    } */
 
 
 
