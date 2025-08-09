@@ -292,9 +292,8 @@ button:active, button a:active {
         padding-top: 5em;
     }
 
-    #hero img {
-        width: 30em;
-        height: auto;
+    .hero-image {
+        margin: 5em;
     }
 
 
@@ -580,7 +579,7 @@ button:active, button a:active {
         grid-template-columns: 1fr 1fr;
         gap: 3em;
     }
-    
+
     #contact-links {
         display: grid;
         align-content: center;
