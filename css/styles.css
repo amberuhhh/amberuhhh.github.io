@@ -514,7 +514,7 @@ button:active, button a:active {
 /* Art Gallery */
     /* ART GALLERY SECTION */
     #art-gallery-section {
-        padding: var(--site-padding);
+        padding: 5% 15% 5% 15%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-image: url("../images/my-brand/grid-horizontal.png");
@@ -555,11 +555,18 @@ button:active, button a:active {
 
 /* Contact Sections */
     #contact {
-        margin: var(--site-padding);
-        padding: 0em 5em 0em 5em;
+        padding: var(--site-padding);
+        background-color: var(--light-purple);
+    }
+
+    #contact-bounding-box {
+        margin: 3em;
+        padding: 3em;
+        height: 16em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5em;
+        background-color: white;
     }
 
     #contact-get-in-touch {
