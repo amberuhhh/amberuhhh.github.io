@@ -530,7 +530,7 @@ button:active, button a:active {
     }
 
     .art-gallery-text-box {
-        padding: 2em;
+        padding: 2em 3em 2em 2em ;
         background-color: white;
     }
 
@@ -578,12 +578,13 @@ button:active, button a:active {
         padding: 3em;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2em;
-        justify-content: space-between;
+        gap: 3em;
     }
-/* 
+    
     #contact-links {
-    } */
+        display: grid;
+        align-content: center;
+    }
 
 
 
