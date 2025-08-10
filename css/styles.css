@@ -638,8 +638,8 @@ button:active, button a:active {
 /*RESPONSIVE*/
 
 
-/* Media query for IPad Pros - less tha 1024*/
-    @media screen and (max-width: 1000px) {
+/* Media query for IPad Pros - less than 1024px*/
+    @media screen and (max-width: 1024px) {
         :root {
             --site-padding: 2% 10% 2% 10%;
         }
@@ -779,7 +779,7 @@ button:active, button a:active {
 
 /* Media query for IPad Minis - less tha 768*/
 /* THIS IS WHERE THE NAV CHANGES TO HAMBURGER */
-    @media screen and (max-width: 48em) {
+    @media screen and (max-width: 768px) {
     :root {
         --site-padding: 1% 8% 1% 8%;
     }
@@ -935,7 +935,7 @@ button:active, button a:active {
 
 
 /* Media query for Phones - less tha 480px*/
-    @media screen and (max-width: 30em) {
+    @media screen and (max-width: 480px) {
         /*Links are blue?????? change that maybe*/
         :root {
             --site-padding: 1% 5% 1% 5%;
