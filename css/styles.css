@@ -280,22 +280,30 @@ button:active, button a:active {
     }
 
     #hero {
-        padding: 1.5% 5% 0em 15%;
+        padding: 1.5% 5% 0% 15%;
         display: grid;
-        grid-template-columns: 1.25fr 0.75fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2em;
-        background-color: var(--light-purple), 80;
         background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png");
     }
 
     .hero-card {
         padding-top: 5em;
     }
-/* 
+
     .hero-image {
-        margin: 5em;
-        width: 18em;
-    } */
+        width: auto;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .art-gallery-hero {
+        padding-top: 6em;
+        background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png");
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 2em;
+    }
 
 
 
@@ -535,10 +543,6 @@ button:active, button a:active {
     }
 
     /* ART GALLERY PAGE */
-    .art-gallery-hero {
-        padding-top: 5em;
-    }
-
     #art-gallery-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -566,7 +570,7 @@ button:active, button a:active {
     #contact-bounding-box {
         margin: 3em;
         padding: 3em;
-        height: 16em;
+        height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5em;
@@ -645,6 +649,7 @@ button:active, button a:active {
             margin: 0;
         }
         
+    /*
         h1 {
             font-size: 5rem;
             margin: 0em;
@@ -669,11 +674,27 @@ button:active, button a:active {
         
         p {
             font-size: 1em;
-        }
+        } 
         
         h6 {
             font-size: 0.85rem;
-        }    
+        }   
+    */ 
+
+        #hero {
+            padding: 2% 1% 0% 10%;
+            grid-template-columns: 1.5fr 0.5fr;
+        }
+
+        .hero-card {
+            padding-top: 2em;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+        }
+
         
         .text-images, .images-text {
             grid-template-columns: 1fr;
