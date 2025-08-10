@@ -114,7 +114,7 @@ h4 {
 h5 {
     font-size: 21px;
     margin: 0;
-    padding-bottom: 0.5em;
+    /* padding-bottom: 0.5em; */
 }
 
 p {
@@ -213,9 +213,9 @@ button:active, button a:active {
     #top-notif {
         top: 0;
         position: sticky;
-        height: 2em;
         text-align: center;
         padding: var(--site-padding);
+        color: white;
         background-color: var(--light-purple);
     }
 
@@ -283,7 +283,7 @@ button:active, button a:active {
         padding: 2% 5% 0% 15%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2em;
+        gap: 5%;
         background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png");
     }
 
