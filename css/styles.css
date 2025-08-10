@@ -280,7 +280,7 @@ button:active, button a:active {
     }
 
     #hero {
-        padding: 1.5% 5% 0% 15%;
+        padding: 2% 5% 0% 15%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
@@ -288,13 +288,12 @@ button:active, button a:active {
     }
 
     .hero-card {
-        padding-top: 5em;
+        padding-top: 10%;
     }
 
     .hero-image {
         width: auto;
         height: 100%;
-        z-index: 0;
     }
 
     .art-gallery-hero {
@@ -535,6 +534,7 @@ button:active, button a:active {
     #art-gallery-section img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
     .art-gallery-text-box {
@@ -639,7 +639,7 @@ button:active, button a:active {
 
 
 /* Media query for IPad Pros - less tha 1024*/
-    @media screen and (max-width: 64em) {
+    @media screen and (max-width: 1000px) {
         :root {
             --site-padding: 2% 10% 2% 10%;
         }
@@ -648,42 +648,10 @@ button:active, button a:active {
             font-size: 7em !important;
             margin: 0;
         }
-        
-    /*
-        h1 {
-            font-size: 5rem;
-            margin: 0em;
-            font-weight: 800;
-        }
-        
-        h2 {
-            font-size: 3.15rem;
-        }
-        
-        h3 {
-            font-size: 2.35rem;
-        }
-        
-        h4 {
-            font-size: 1.75rem;
-        }
-        
-        h5 {
-            font-size: 1.25rem;
-        }
-        
-        p {
-            font-size: 1em;
-        } 
-        
-        h6 {
-            font-size: 0.85rem;
-        }   
-    */ 
 
         #hero {
-            padding: 2% 1% 0% 10%;
-            grid-template-columns: 1.5fr 0.5fr;
+            padding: var(--site-padding);
+            grid-template-columns: 1fr;
         }
 
         .hero-card {
@@ -691,11 +659,20 @@ button:active, button a:active {
         }
 
         .hero-image {
-            width: 100%;
+            width: auto;
             height: 100%;
+            align-items: center;
         }
 
-        
+        .hero-image img {
+            height: 100%;
+            width: 100%;
+        }
+/* 
+        #contact {
+            
+        }
+         */
         .text-images, .images-text {
             grid-template-columns: 1fr;
             max-height: 100%;
@@ -783,10 +760,21 @@ button:active, button a:active {
             margin-bottom: 3em;
         }
 
-        #contact {
-            margin: var(--site-padding);
+        #art-gallery-section {
+            display: block;
         }
-    
+
+        #art-gallery-section img {
+            width: 100%;
+            height: 15em;
+        }
+
+        #contact-bounding-box {
+            grid-template-columns: 1fr;
+            gap: 2em;
+        }
+
+        
 }
 
 /* Media query for IPad Minis - less tha 768*/
