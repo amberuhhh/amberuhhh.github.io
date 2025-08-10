@@ -280,9 +280,9 @@ button:active, button a:active {
     }
 
     #hero {
-        padding-right: 5em;
+        padding: 1.5% 5% 0em 15%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.25fr 0.75fr;
         gap: 2em;
         background-color: var(--light-purple), 80;
         background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png");
@@ -291,10 +291,11 @@ button:active, button a:active {
     .hero-card {
         padding-top: 5em;
     }
-
+/* 
     .hero-image {
         margin: 5em;
-    }
+        width: 18em;
+    } */
 
 
 
