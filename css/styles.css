@@ -297,14 +297,12 @@ button:active, button a:active {
     }
 
     .art-gallery-hero {
-        padding-top: 6em;
+        padding-top: 5em;
         background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png");
         display: grid;
         grid-template-columns: 1.25fr 0.75fr;
         gap: 2em;
     }
-
-
 
     /* Product headers/heros */
     #product-header {
@@ -543,23 +541,27 @@ button:active, button a:active {
     }
 
     /* ART GALLERY PAGE */
-    #art-gallery-main {
+    #art-gallery-main, .gallery-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 3em;
+        gap: 1em;
+        padding-bottom: 1em;
+    }
+
+    #art-gallery-main h4, .gallery-section h4 {
+        margin: 0.5em 0em 0.25em 0em;
     }
 
     .art-card{
         height: 13em, 100%;
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
     }
 
     .art-card img {
         height: auto;
         width: 100%;
     }
-
 
 /* Contact Sections */
     #contact {
