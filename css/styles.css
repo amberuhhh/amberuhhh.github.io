@@ -776,7 +776,14 @@ button:active, button a:active {
             gap: 2em;
         }
 
-        
+        #art-gallery-main, .gallery-section {
+            grid-template-columns: 1fr;
+        }
+ 
+        .art-card img {
+            max-width: 100%;
+        }
+
 }
 
 /* Media query for IPad Minis - less tha 768*/
@@ -933,6 +940,7 @@ button:active, button a:active {
     #contact button, #contact-about button {
         margin-top: 2em;
     }
+
 }
 
 
