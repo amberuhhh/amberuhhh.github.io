@@ -350,12 +350,13 @@ button:active, button a:active {
 /* ABOUT PAGE */
     .about-header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2em;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 3em;
+        padding-right: 5%;
     }
 
     .about-header-image, .about-header img {
-        height: 100%;
+        height: auto;
         max-width: 100%;
         object-fit: cover;
         border-radius: 0 0 0 25%;
