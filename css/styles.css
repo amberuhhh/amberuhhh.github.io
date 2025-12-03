@@ -242,11 +242,6 @@ button:active, button a:active {
     .nav-logo {
         height: 2.8em;
     }
-    
-    .icons {
-        height: 1em;
-        width: 1em;
-    }
 
     nav button {
         padding: 16px;
@@ -316,8 +311,6 @@ button:active, button a:active {
         justify-content: center;
     }
 
-
-
     .product-header {
         margin: var(--site-padding);
         display: grid;
@@ -351,15 +344,14 @@ button:active, button a:active {
     .about-header {
         display: grid;
         grid-template-columns: 1.2fr 0.8fr;
-        gap: 3em;
-        padding-right: 5%;
+        gap: 5em;
+        padding-right: 8%;
     }
 
     .about-header-image, .about-header img {
         height: auto;
         max-width: 100%;
         object-fit: cover;
-        border-radius: 0 0 0 25%;
         order: 2;
     }
 
@@ -378,6 +370,15 @@ button:active, button a:active {
         margin-bottom: 3em;
     }
 
+    .about-main div {
+        padding: 1.5em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+    .about-main h3 {
+        text-align: center;
+    }
+
     .about-main *, .about-text li {
         list-style: square;
         margin: 0;
@@ -387,6 +388,15 @@ button:active, button a:active {
         padding: 0;
     }
 
+    .about-text .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+        padding-top: 0.5em;
+        margin: 0;
+        min-height: 1em;
+        max-width: 7em;
+    }
 
 
 /* MAIN */
@@ -524,9 +534,15 @@ button:active, button a:active {
 /* Art Gallery */
     /* ART GALLERY SECTION */
     #art-gallery-section {
-        padding: 5% 15% 5% 15%;
+        padding: 5% 15% 1% 15%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        background-image: url("../images/my-brand/grid-horizontal.png");
+    }
+
+    #hobbies-section {
+        text-align: center;
+        padding: 2% 15% 5% 15%;
         background-image: url("../images/my-brand/grid-horizontal.png");
     }
 
@@ -536,9 +552,28 @@ button:active, button a:active {
         object-fit: cover;
     }
 
-    .art-gallery-text-box {
+    #hobbies-images {
+        padding-top: 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    #hobbies-images img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .art-gallery-text-box, #hobbies-text {
         padding: 2em 3em 2em 2em ;
         background-color: white;
+    }
+
+    #hobbies-grid-text {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
     }
 
     /* ART GALLERY PAGE */
