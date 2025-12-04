@@ -107,7 +107,7 @@ h3 {
 
 h4 {
     font-size: 26px;
-    margin: 1em 0em 0.75em 0em;
+    margin: 1em 0em 0.5em 0em;
     /* padding-bottom: 0.5em; */
 }
 
@@ -953,8 +953,8 @@ button:active, button a:active {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 1em; 
-        padding-right: 8%;
-        padding-bottom: 3em;
+        padding: 0;
+        margin: 0;
         background-image: url("../images/my-brand/grid-vertical-hero-mobile.png");
         background-position: 0% 50%;
     }
@@ -969,22 +969,25 @@ button:active, button a:active {
 
     .hero-card {
         display: contents;
-        padding-top: 0em;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
     .hero-intro {
-        color: #e5b9fc;
-        text-shadow: #302035 3px 3px 3px;
-        padding-top: 20em;
+        padding: 70% 8% 4% 8%;
+        color: white;
+        text-shadow: #302035 4px 4px 5px;
         order: 2;
         background-image: url("../images/amber/hero-image.png");
         background-size: cover; /* Resize the background image to cover the entire container */
-        background-position: 100% 10%;
+        background-position: 50% 50%;
         background-repeat: no-repeat; /* Do not repeat the image */
     }
 
     .hero-para {
         order: 3;
+        padding: 1% 8% 1% 8%;
     }
 
     .hero-card p {
@@ -997,16 +1000,6 @@ button:active, button a:active {
         gap: 1.5em;
 
     }
-
-    /* .about-header-image, .about-header img {
-        height: auto;
-        width: 100%;
-        justify-content: center;
-        object-fit: cover;
-        border-radius: 0;
-        margin: 0;
-        order: 1;
-    } */
 
     .about-header-image {
         padding: var(--site-padding);
@@ -1032,6 +1025,10 @@ button:active, button a:active {
     #hobbies-grid-text {
         grid-template-columns: 1fr;
         gap: 0.5em;
+    }
+
+    #hobbies-images {
+        grid-template-columns: 1fr;
     }
 
     #product-header {
@@ -1069,6 +1066,11 @@ button:active, button a:active {
         padding: 5% 10% 5% 10%;
     }
     
+    .art-gallery-hero {
+        padding-top: 5em;
+        padding-bottom: 3em;
+        grid-template-columns: 1fr;
+    }
 
     #contact-heading-box {
         margin: 1em;
@@ -1112,7 +1114,7 @@ button:active, button a:active {
         }
 
         h1 {
-            font-size: 4em;
+            font-size: 3.9em;
         }
 
         header {
@@ -1136,6 +1138,25 @@ button:active, button a:active {
             background-position: 0% 30%;
         }
 
+        .hero-intro {
+            padding: 50% 8% 3% 8%;
+        }
+
+        .hero-intro h1{
+            font-size: 3em;
+        }
+
+        .hero-intro h4{
+            margin-bottom: 0.3em;
+            font-size: 1.3em;
+        }
+
+        .art-gallery-hero {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            grid-template-columns: 1fr;
+        }
+
         .items {
             grid-template-columns: 1fr;
             gap: 2em;
@@ -1149,6 +1170,34 @@ button:active, button a:active {
             width: 100%;
             /* border-top: 0.05em solid var(--dark-colour); */
         }
+
+
+
+
+
+
+        #contact-heading-box {
+            margin: 0.5em;
+            padding: 1em;
+        } 
+        
+        #contact-bounding-box {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1em;
+        }
+    
+        #contact-get-in-touch {
+            margin: var(--site-padding);
+            padding: 3em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3em;
+        }
+
+
+        
 
         #contact .center-image img {
             max-height: 16em;
