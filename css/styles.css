@@ -545,26 +545,27 @@ button:active, button a:active {
 /* Art Gallery */
     /* ART GALLERY SECTION */
     #art-gallery-section {
-        padding: 5% 15% 1% 15%;
+        padding: 2% 15% 2% 15%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         background-image: url("../images/my-brand/grid-horizontal.png");
+        gap: 0;
     }
 
     #hobbies-section {
         text-align: center;
-        padding: 2% 15% 5% 15%;
+        padding: 0% 15% 0% 15%;
         background-image: url("../images/my-brand/grid-horizontal.png");
     }
 
     #art-gallery-section img {
-        width: 100%;
+        max-width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
     #hobbies-images {
-        padding-top: 3%;
+        padding: 3% 0% 3% 0%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1em;
@@ -620,7 +621,8 @@ button:active, button a:active {
         margin: 3em;
         padding: 3em;
         background-color: white;
-    }
+    } 
+    
      #contact-heading-box h2 {
         text-align: center;
      }
@@ -835,12 +837,28 @@ button:active, button a:active {
         }
 
         #art-gallery-section {
-            display: block;
+            grid-template-columns: 1fr;
+            gap: 0;
+            padding: 5% 10% 5% 10%;
+        }
+
+        .padding-about {
+            padding: 100em;
+        }
+
+        #hobbies-section {
+            padding: 0% 10% 3% 10%;
         }
 
         #art-gallery-section img {
             width: 100%;
-            height: 15em;
+            height: 18em;
+        }
+
+        #contact-heading-box {
+            margin: 1em;
+            padding: 2em;
+            background-color: white;
         }
 
         #contact-bounding-box {
@@ -979,6 +997,11 @@ button:active, button a:active {
         order: 2;
     }
 
+    #hobbies-grid-text {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
+
     #product-header {
         margin: 1% 0% 2% 0%;
     } 
@@ -1010,27 +1033,30 @@ button:active, button a:active {
         width: 80%;
     }
 
-    #contact, .contact-background-box, #contact-about {
+    #art-gallery-section {
+        padding: 5% 10% 5% 10%;
+    }
+    
+
+    #contact-heading-box {
+        margin: 1em;
+        padding: 1.5em;
+    } 
+    
+    #contact-bounding-box {
+        height: 100%;
+        display: grid;
         grid-template-columns: 1fr;
         gap: 1em;
     }
 
-    #contact-about h2 {
-        border-top: 0.1em black solid;
-        padding-top: 0.7em;
+    #contact-get-in-touch {
+        margin: var(--site-padding);
+        padding: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
     }
-
-    #contact .center-image img {
-        max-height: 20em;
-        max-width: 100%;
-        margin-top: 1em;
-        border-radius: 2em;
-    }
-
-    #contact button, #contact-about button {
-        margin-top: 2em;
-    }
-
 }
 
 
