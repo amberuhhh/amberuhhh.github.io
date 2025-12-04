@@ -296,6 +296,17 @@ button:active, button a:active {
     .hero-card {
         padding-top: 10%;
     }
+/* 
+    .hero-intro {
+        order: ;
+    }
+    .hero-para {
+        order: ;
+    } */
+
+    .hero-image-mobile {
+        display: none;
+    }
 
     .hero-image {
         width: auto;
@@ -367,7 +378,7 @@ button:active, button a:active {
     }
 
     .about-text {
-        margin: 10% 0% 0% 30%;
+        margin: 0% 0% 0% 30%;
         justify-content: space-evenly;
         list-style: square;
         order: 1;
@@ -738,20 +749,17 @@ button:active, button a:active {
             height: 100%;
             background-image: url("../images/amber/hero-image.png");
             background-size: cover; /* Resize the background image to cover the entire container */
-            background-position: 100% 50%;
+            background-position: 100% 10%;
             background-repeat: no-repeat; /* Do not repeat the image */
             order: 2;
         }
 
         .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
             display: none;
         }
         
         .text-images, .images-text {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             max-height: 100%;
             gap: 0em;
         }
@@ -816,8 +824,9 @@ button:active, button a:active {
        }
 
         .about-header {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.1fr 0.9fr;
             gap: 4em;
+            padding-right: 2%;
         }
 
         .about-text {
@@ -839,12 +848,8 @@ button:active, button a:active {
 
         #art-gallery-section {
             grid-template-columns: 1fr;
-            gap: 0;
             padding: 5% 10% 5% 10%;
-        }
-
-        .padding-about {
-            padding: 100em;
+            max-height: 40%;
         }
 
         #hobbies-section {
@@ -852,8 +857,8 @@ button:active, button a:active {
         }
 
         #art-gallery-section img {
-            width: 100%;
-            height: 18em;
+            max-width: 100%;
+            height: 20em;
         }
 
         #contact-heading-box {
@@ -946,22 +951,40 @@ button:active, button a:active {
     #hero {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto;
         gap: 1em; 
         padding-right: 8%;
-    }
-
-    .hero-card {
-        order: 2;
-        padding-top: 0;
+        padding-bottom: 3em;
+        background-image: url("../images/my-brand/grid-vertical-hero-mobile.png");
+        background-position: 0% 50%;
     }
 
     .hero-image {
         display: none;
-        width: 100%;
-        height: 16em;
+        max-width: 100%;
+        height: 20em;
         background-position: 0% 30%;
         order: 1;
+    }
+
+    .hero-card {
+        display: contents;
+        padding-top: 0em;
+    }
+
+    .hero-intro {
+        color: #e5b9fc;
+        text-shadow: #302035 3px 3px 3px;
+        padding-top: 20em;
+        order: 2;
+        background-image: url("../images/amber/hero-image.png");
+        background-size: cover; /* Resize the background image to cover the entire container */
+        background-position: 100% 10%;
+        background-repeat: no-repeat; /* Do not repeat the image */
+    }
+
+    .hero-para {
+        order: 3;
     }
 
     .hero-card p {
@@ -971,16 +994,24 @@ button:active, button a:active {
     .about-header {
         grid-template-columns: 1fr;
         margin: 0% 0% 1% 0%;
-        gap: 4em;
+        gap: 1.5em;
+
     }
 
-    .about-header-image, .about-header img {
-        max-height: 20em;
-        min-width: 100%;
+    /* .about-header-image, .about-header img {
+        height: auto;
+        width: 100%;
+        justify-content: center;
         object-fit: cover;
         border-radius: 0;
-        padding: 0;
         margin: 0;
+        order: 1;
+    } */
+
+    .about-header-image {
+        padding: var(--site-padding);
+        height: auto;
+        border-radius: 0;
         order: 1;
     }
 
@@ -994,7 +1025,7 @@ button:active, button a:active {
     }
 
     .about-text {
-        margin: var(--site-padding);
+        margin: 0% 8% 8% 8%;
         order: 2;
     }
 
