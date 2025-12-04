@@ -550,6 +550,7 @@ button:active, button a:active {
         grid-template-columns: 1.5fr 1.2fr;
         background-image: url("../images/my-brand/grid-horizontal.png");
         gap: 0;
+        max-height: 28em;
     }
 
     #hobbies-section {
@@ -560,7 +561,7 @@ button:active, button a:active {
 
     #art-gallery-section img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
 
