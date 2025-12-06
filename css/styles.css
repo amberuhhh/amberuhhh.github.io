@@ -433,7 +433,7 @@ button:active, button a:active {
     }
 
     #home-main {
-        margin-bottom: 8%;
+        margin-bottom: 16%;
     }
 
     #home-main h2{
@@ -541,7 +541,7 @@ button:active, button a:active {
         gap: 5%; 
         margin: 0;
         padding: 0;
-        max-height: 28em;
+        max-height: 30em;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
     }
@@ -764,12 +764,6 @@ button:active, button a:active {
             gap: 0em;
         }
 
-        .items {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding: 0;
-        }
-
         .showcase-text-box {
             order: 1;
             height: inherit;
@@ -849,7 +843,7 @@ button:active, button a:active {
         #art-gallery-section {
             grid-template-columns: 1fr;
             padding: 5% 10% 5% 10%;
-            max-height: 40%;
+            max-height: 30%;
         }
 
         #hobbies-section {
@@ -992,6 +986,15 @@ button:active, button a:active {
 
     .hero-card p {
         width: auto;
+    }
+
+    #home-main {
+        margin-bottom: 5%;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+        gap: 1em;
     }
 
     .about-header {
