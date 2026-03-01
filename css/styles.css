@@ -1,7 +1,10 @@
 /*Base*/
+/* Cabin */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 /* Raleway
 Bodoni Moda (Didot replacement) */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* BRUSH PEN */
 @import url("https://use.typekit.net/csp8tva.css"); 
@@ -54,7 +57,7 @@ Bodoni Moda (Didot replacement) */
 body {
     padding: 0;
     margin: 0;
-    font-family: "Raleway", Arial, sans-serif;
+    font-family: "Cabin", "Raleway", Arial, sans-serif;
     background-color: var(--light-colour);
 }
 
