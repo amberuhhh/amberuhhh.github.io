@@ -1,6 +1,7 @@
 /*Base*/
-/* Cabin */
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+/* Abril Fatface
+Cabin */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 /* Raleway
 Bodoni Moda (Didot replacement) */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -81,7 +82,7 @@ ol li {
 
 h1 {
     font-size: 72px;
-    font-family: "gelica", sans-serif;
+    font-family: "Abril Fatface", "gelica", serif;
     font-weight: 700;
     font-style: normal;
     line-height: 98%;
@@ -91,7 +92,7 @@ h1 {
 
 h2 {
     font-size: 40px;
-    font-family: "gelica", sans-serif;
+    font-family: "Abril Fatface", "gelica", serif;
     font-weight: 600;
     font-style: normal;
     line-height: 98%;
@@ -101,7 +102,7 @@ h2 {
 
 h3 {
     font-size: 34px;
-    font-family: "gelica", sans-serif;
+    font-family: "Abril Fatface", "gelica", serif;
     font-weight: 500;
     font-style: normal;
     margin: 0;
