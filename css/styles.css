@@ -292,11 +292,15 @@ button:active, button a:active {
     }
 
     #hero {
-        padding: 2% 5% 0% 15%;
+        padding: 1% 5% 0% 15%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5%;
-        background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png");
+        background-image: url("../images/my-brand/assets/star-bg_low-opacity.png");
+        background-size: cover;
+    }
+    .hero-para p {
+        max-width: 50ch;
     }
 
     .hero-card {
@@ -321,9 +325,11 @@ button:active, button a:active {
 
     .art-gallery-hero {
         padding-top: 5em;
-        background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png");
+        /* background-image: url("../images/my-brand/grid-horizontal-hero-desktop.png"); */
+        background-image: url("../images/my-brand/assets/star-bg_low-opacity.png");
+        background-size: cover;
         display: grid;
-        grid-template-columns: 1.25fr 0.75fr;
+        grid-template-columns: 1.30fr 0.70fr;
         gap: 2em;
     }
 
@@ -372,7 +378,7 @@ button:active, button a:active {
     .about-header {
         display: grid;
         grid-template-columns: 1.2fr 0.9fr;
-        gap: 5em;
+        gap: 3em;
         padding-right: 8%;
     }
 
@@ -384,7 +390,7 @@ button:active, button a:active {
     }
 
     .about-text {
-        margin: 17% 0% 0% 30%;
+        margin: 12% 0% 0% 30%;
         justify-content: space-evenly;
         list-style: square;
         order: 1;
@@ -399,7 +405,7 @@ button:active, button a:active {
     }
 
     .about-main div {
-        padding: 1.5em;
+        padding: 2em 2em 3em 2em;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
 
@@ -565,15 +571,16 @@ button:active, button a:active {
         padding: 2% 15% 2% 15%;
         display: grid;
         grid-template-columns: 1.5fr 1.2fr;
-        background-image: url("../images/my-brand/grid-horizontal.png");
+        background-image: url("../images/my-brand/assets/star-bg_low-opacity.png");
+        background-size: cover;
         gap: 0;
         max-height: 28em;
     }
 
     #hobbies-section {
         text-align: center;
-        padding: 0% 15% 0% 15%;
-        background-image: url("../images/my-brand/grid-horizontal.png");
+        padding: 1.5% 15% 3% 15%;
+        background-color: white;
     }
 
     #art-gallery-section img {
@@ -588,7 +595,6 @@ button:active, button a:active {
     }
 
     #hobbies-images {
-        padding: 3% 0% 3% 0%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1em;
@@ -636,7 +642,7 @@ button:active, button a:active {
     }
 
     #contact-heading-box {
-        margin: 3em;
+        margin: 3em 6em 3em 6em;
         padding: 3em;
         background-color: white;
     } 
@@ -649,7 +655,7 @@ button:active, button a:active {
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5em;
+        gap: 3em;
     }
 
     #contact-get-in-touch {
@@ -748,6 +754,10 @@ button:active, button a:active {
         .hero-card {
             padding: 2em 0em 2em 0em;
             order: 1;
+        }
+
+        .hero-para p {
+            max-width: auto;
         }
    
         .hero-image {
