@@ -339,6 +339,10 @@ button:active, button a:active {
         text-align: left;
     }
 
+    #product-header p {
+        max-width: 70ch;
+    }
+
     #product-header ol {
         list-style: none;
         padding: 0;
