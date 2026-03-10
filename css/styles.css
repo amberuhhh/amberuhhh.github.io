@@ -420,7 +420,7 @@ button:active, button a:active {
         grid-template-columns: 1fr 1fr;
         gap: 2em;
         text-align: start;
-        padding: 1.5em 0em 1.5em 0em;
+        padding: 0em 0em 1.5em 0em;
     }
 
     .about-main div {
@@ -601,7 +601,7 @@ button:active, button a:active {
     .art-gallery-text-box { 
         padding: 3em;
         background-color: #ffffff;
-    }
+    } 
 
     #hobbies-images {
         display: grid;
