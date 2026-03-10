@@ -618,7 +618,7 @@ button:active, button a:active {
         text-align: left;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5em;
+        gap: 2em;
     }
 
     /* ART GALLERY PAGE */
