@@ -310,6 +310,7 @@ button:active, button a:active {
         grid-template-columns: 1fr 1fr;
         gap: 5%;
         background-image: url("../images/my-brand/assets/star-bg_low-opacity.png");
+        background-position: center center;
         background-size: cover;
     }
     
@@ -985,7 +986,7 @@ button:active, button a:active {
         margin: 0;
         padding: 0em 0em 1em 0em;
         background-image: url("../images/my-brand/assets/star-bg_low-opacity.png");
-        background-position: 0% 50%;
+        background-position: center center;
     }
 
     .hero-image {
@@ -1175,7 +1176,6 @@ button:active, button a:active {
 
         .hero-image {
             height: 12em;
-            background-position: 0% 30%;
         }
 
         .hero-intro {
