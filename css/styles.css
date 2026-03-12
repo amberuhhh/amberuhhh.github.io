@@ -319,7 +319,7 @@ button:active, button a:active {
     }
 
     .hero-card {
-        padding-top: 10%;
+        padding-top: 12%;
     }
 
     .hero-image-mobile {
@@ -753,14 +753,14 @@ button:active, button a:active {
         }
 
         #hero {
-            padding: 2% 0% 2% 10%;
+            padding: 0% 0% 2% 10%;
             grid-template-columns: 0.6fr 1.4fr;
             padding-bottom: 0;
             gap: 2em;
         }
 
         .hero-card {
-            padding: 2em 0em 2em 0em;
+            padding: 0em 0em 2em 0em;
             order: 1;
         }
 
