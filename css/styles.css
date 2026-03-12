@@ -90,7 +90,7 @@ h1 {
     font-style: normal;
     line-height: 80%;
     margin: 0;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.3em;
 }
 
 h2 {
@@ -390,15 +390,21 @@ button:active, button a:active {
     .about-header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 3em;
+        gap: 4em;
         padding-right: 0em;
         height: 35em;
+        background-image: url("../images/my-brand/assets/star-bg_low-opacity.png");
+        background-size: cover;
     }
 
     .about-header-text {
-        margin: 10% 0% 0% 30%;
+        margin: 5% 0% 0% 30%;
         order: 1;
     } 
+
+    .about-header h4 {
+        color: var(--dark-purple);
+    }
 
     .about-header-image {
         max-height: 35em;
@@ -844,16 +850,16 @@ button:active, button a:active {
 
 
         .about-header {
-            height: 30em;
+            height: 32em;
             gap: 2em;
         }
 
         .about-header-text {
-            margin: 5% 0% 0% 20%;
+            margin: 0% 0% 0% 20%;
         } 
 
         .about-header-image {
-            max-height: 30em;
+            max-height: 32em;
         }
 
 
