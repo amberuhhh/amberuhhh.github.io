@@ -226,7 +226,6 @@ button:active, button a:active {
         padding: var(--site-padding);
         background-color: var(--light-colour);
         border-bottom: 0.08em #2b2b2b solid;
-        z-index: 998;
     }
 
     #top-notif {
@@ -242,7 +241,6 @@ button:active, button a:active {
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 999;
         height: 1em;
         gap: 0.5em;
     }
@@ -402,10 +400,6 @@ button:active, button a:active {
         order: 1;
     } 
 
-    .about-header h4 {
-        color: var(--dark-purple);
-    }
-
     .about-header-image {
         max-height: 35em;
         min-width: 100%;
@@ -417,7 +411,6 @@ button:active, button a:active {
         min-width: 100%;
         object-fit: cover;
     }
-    
     
     .about-main {
         display: grid;
@@ -921,7 +914,7 @@ button:active, button a:active {
         --site-padding: 1% 8% 1% 8%;
     }
 
-    .hero-intro h1, h4 {
+    .hero-intro h1, .hero-intro h4 {
         color: #ffffff;
     }
     
@@ -929,10 +922,6 @@ button:active, button a:active {
         font-size: 7em!important;
     }
 
-    #top-nav {
-        z-index: 999;
-        top: 0em;
-    }
 
     .nav-menu {
         display: grid;
@@ -941,15 +930,14 @@ button:active, button a:active {
         gap: 0em;
         position: fixed;
         right: -120%; 
-        top: 1.6em;
+        top: 3.3%;
         border-left: 0.1em solid var(--dark-colour);
         border-bottom: 0.1em solid var(--dark-colour);
         background-color: #fff;
-        height: 75%;
+        height: auto;
         width: 38%;
         transition: ease 0.2s;
-        padding: 1em;
-        z-index: 100;
+        padding: 1.5em;
     }
 
     .nav-menu * {
@@ -957,13 +945,12 @@ button:active, button a:active {
     }
 
     .nav-logo {
-        height: 1.9em;
+        height: 3em;
     }
 
     .hamburger {
         display: block; 
         top: 10em;
-        z-index: 800;
     }
 
     #nav-projects-dropdown {
@@ -1041,12 +1028,12 @@ button:active, button a:active {
 
     .about-header {
         grid-template-columns: 1fr;
-        gap: 1.5em;
+        gap: 0em;
         height: auto;
     }
 
     .about-header-text {
-        margin: var(--site-padding);
+        margin: 0% 8% 8% 8%;
         order: 2;
     }
 
@@ -1080,7 +1067,7 @@ button:active, button a:active {
     }
 
     #product-header {
-        margin: 1% 0% 2% 0%;
+        margin: 3% 0% 2% 0%;
     } 
 
     .products {
@@ -1218,8 +1205,8 @@ button:active, button a:active {
         }
 
         #contact-heading-box {
-            margin: 0.5em;
-            padding: 1em;
+            margin: 3em 1em 3em 1em;
+            padding: 2em;
         } 
         
         #contact-bounding-box {
